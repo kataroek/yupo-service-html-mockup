@@ -1,4 +1,4 @@
-import { m as s } from './module.esm.c6423134.js';
+import { m as c } from './module.esm.c6423134.js';
 const o = [
   {
     title: 'スクリーン印刷',
@@ -36,258 +36,12 @@ const o = [
       '<p>ヒートセットタイプのインキが使用される高速輪転印刷には、ユポは適性がありません。</p>'
   }
 ];
-s.data('popup', () => ({
+c.data('popup', () => ({
   showpopup: !1,
   data: o,
   activePopup: {},
   getContent(t) {
     this.activePopup = this.data[t];
-  }
-}));
-const c = [
-  {
-    title: '油性オフセット',
-    subCat: [
-      {
-        title: '環境対応製品',
-        items: [
-          'スーパーユポダブル［ユポグリーンシリーズ］',
-          'スーパーユポ®［ユポグリーンシリーズ］',
-          'ウルトラユポ®［ユポグリーンシリーズ］'
-        ]
-      },
-      {
-        title: '一般品',
-        items: [
-          'ニューユポ',
-          'ウルトラユポ®［ユポグリーンシリーズ］',
-          'スーパーユポ®［ユポグリーンシリーズ］',
-          'スーパーユポダブル［ユポグリーンシリーズ］',
-          'ユポ®イッパン'
-        ]
-      },
-      { title: '高光沢品', items: ['ユポ®ハイグロス'] },
-      {
-        title: '半透明品',
-        items: ['ユポトレース®', 'ユポ®電飾用紙［ユポグリーンシリーズ］']
-      },
-      {
-        title: '厚手品',
-        items: ['アルファユポ®［一般品］', 'アルファユポ®［半透明］']
-      },
-      { title: '吸着品', items: ['ユポ®・サクションタック®', 'ユポ静電吸着®'] },
-      {
-        title: 'コート品',
-        items: [
-          '印字用ユポコート［片面コート］',
-          '印字用ユポコート［両面コート］',
-          'ユポ®カーボンレス'
-        ]
-      },
-      {
-        title: '貼合品',
-        items: [
-          'クロスユポ®［ダブル］',
-          'メタリックユポ',
-          'ハイティアーユポ®',
-          'コンシールユポ®'
-        ]
-      }
-    ]
-  },
-  {
-    title: 'UVオフセット',
-    subCat: [
-      {
-        title: '環境対応製品',
-        items: [
-          'ユポエアー',
-          'ウルトラユポ®［ユポグリーンシリーズ］',
-          'ユポタック®原紙［ユポグリーンシリーズ］',
-          'アクアユポ®[ユポグリーンシリーズ]'
-        ]
-      },
-      {
-        title: '一般品',
-        items: [
-          'ウルトラユポ®［ユポグリーンシリーズ］',
-          'ニューユポ',
-          'ユポ®デジタル印刷用紙［HP Indigo／プロダクションプリンター用］'
-        ]
-      },
-      { title: '高光沢品', items: ['ユポ®ハイグロス'] },
-      {
-        title: '半透明品',
-        items: ['ユポトレース®', 'ユポ®電飾用紙［ユポグリーンシリーズ］']
-      },
-      {
-        title: '厚手品',
-        items: ['アルファユポ®［一般品］', 'アルファユポ®［半透明］']
-      },
-      {
-        title: 'ラベル用',
-        items: [
-          'ユポエアー',
-          'ユポタック®原紙',
-          'ユポタック®原紙［ユポグリーンシリーズ］',
-          'ユポタック®原紙［熱転写印字対応］',
-          'ユポタック®原紙［高機能品］',
-          '易剥離ユポ',
-          '易破壊ユポ',
-          'アクアユポ®[ユポグリーンシリーズ]',
-          'ユポ®インモールドラベル［ブロー/インジェクション成形用］',
-          'ユポ®インモールドラベル［インジェクション成形用］'
-        ]
-      },
-      {
-        title: '吸着品',
-        items: [
-          'ユポ®・サクションタック®・アウトドア',
-          'ユポ®透明吸着',
-          'ユポ静電吸着®',
-          'ユポ静電吸着®［透明タイプ］'
-        ]
-      },
-      { title: '貼合品', items: ['コンシールユポ®'] }
-    ]
-  },
-  {
-    title: 'デジタル印刷',
-    subCat: [
-      {
-        title: '環境対応製品',
-        items: ['ユポ®電飾用紙［ユポグリーンシリーズ］']
-      },
-      {
-        title: '一般品',
-        items: [
-          'ユポ®デジタル印刷用紙［HP Indigo／プロダクションプリンター用］',
-          'ユポ®デジタル印刷用紙［HP Indigo用／厚手品］',
-          'ユポ®デジタル印刷用紙［UVインクジェット用］',
-          'ユポジェット®［インクジェット用］'
-        ]
-      },
-      { title: '高光沢品', items: ['ユポ®電飾用紙［ユポグリーンシリーズ］'] },
-      { title: 'ラベル用', items: ['ユポタック®原紙［高機能品］'] },
-      {
-        title: '吸着品',
-        items: [
-          'ユポ®・サクションタック®［インクジェット用］',
-          'ユポ®・サクションタック®［UVインクジェット用］',
-          'ユポ®・サクションタック®［HP Indigo用］',
-          'ユポ®透明吸着',
-          'ユポ静電吸着®［UVオフセット・UVインクジェット印刷用］',
-          'ユポ静電吸着®［HP Indigo用］'
-        ]
-      }
-    ]
-  },
-  {
-    title: 'その他',
-    items: [
-      'スクリーン印刷',
-      'UVシール印刷',
-      'グラビア印刷',
-      'フレキソ印刷',
-      'ビジネスフォーム印刷',
-      '枚葉活版印刷',
-      '非対応印刷方式'
-    ]
-  }
-];
-s.data('products_pc', () => ({
-  init() {
-    this.intialView();
-  },
-  data: c,
-  intialView() {
-    (this.optionA = this.data.map((t) => t.title)),
-      (this.optionB = this.data[0].subCat.map((t) => t.title)),
-      (this.optionC = this.data[0].subCat[0].items.map((t) => t)),
-      (this.selectedOptionC = [0]),
-      (this.selectedProducts = [this.data[0].subCat[0].items[0]]);
-  },
-  optionA: [],
-  optionB: [],
-  optionC: [],
-  selectedOptionA: 0,
-  selectedOptionB: 0,
-  selectedOptionC: [],
-  selectedProducts: [],
-  reloadData() {
-    const t =
-        this.data[this.selectedOptionA].subCat ??
-        this.data[this.selectedOptionA].items,
-      e = this.data[this.selectedOptionA]?.subCat
-        ? this.data[this.selectedOptionA].subCat[this.selectedOptionB].items
-        : [];
-    setTimeout(() => {
-      (this.optionB = t.map((i) => i.title ?? i)),
-        (this.optionC = e.length ? e.map((i) => i) : null);
-    }, 60);
-  },
-  resetOptionB() {
-    (this.selectedOptionB = 0),
-      (this.selectedOptionC = []),
-      parseInt(this.selectedOptionA) !== 3 &&
-        (setTimeout(() => {
-          document
-            .querySelectorAll('input[name="checkToggle"]')
-            .forEach((i) => (i.checked = !1)),
-            (this.selectedOptionC = [0]),
-            this.pushProducts();
-        }, 120),
-        [...document.querySelectorAll('input[name="optionB"]')].forEach(
-          (i, l) => {
-            l === 0 ? (i.checked = !0) : (i.checked = !1);
-          }
-        ),
-        [...document.querySelectorAll('input[name="optionC"]')].forEach(
-          (i, l) => {
-            l === 0 ? (i.checked = !0) : (i.checked = !1);
-          }
-        ));
-  },
-  resetOptionC() {
-    (this.selectedOptionC = []),
-      setTimeout(() => {
-        document
-          .querySelectorAll('input[name="checkToggle"]')
-          .forEach((t) => (t.checked = !1)),
-          (this.selectedOptionC = [0]),
-          this.pushProducts();
-      }, 120);
-  },
-  pushProducts(t = this.selectedOptionC) {
-    const e =
-      this.data[this.selectedOptionA].subCat[this.selectedOptionB].items;
-    this.selectedProducts = this.selectedOptionC.map((i) => e[i]);
-  },
-  removeProduct(t) {
-    this.selectedProducts.splice(t, 1);
-  },
-  showPopup(t) {
-    const e = document.querySelector('.js-popup');
-    e._x_dataStack[0].getContent(t),
-      setTimeout(() => {
-        e._x_dataStack[0].showpopup = !0;
-      }, 120);
-  },
-  toggleCheckAll() {
-    document
-      .querySelectorAll('input[name="checkToggle"]')
-      .forEach((e) => (e.checked = !1));
-  },
-  checkAll() {
-    const t = document.querySelectorAll('input[name="optionC[]"]');
-    (this.selectedOptionC = [...t].map((e) => e.value)), this.pushProducts();
-  },
-  uncheckAll() {
-    document
-      .querySelectorAll('input[name="optionC[]"]:checked')
-      .forEach((e) => (e.checked = !1)),
-      (this.selectedOptionC = []),
-      (this.selectedProducts = []);
   }
 }));
 const n = [
@@ -441,8 +195,258 @@ const n = [
     ]
   }
 ];
-s.data('products_sp', () => ({
+c.data('products_pc', () => ({
+  init() {
+    this.intialView();
+  },
   data: n,
+  intialView() {
+    (this.optionA = this.data.map((t) => t.title)),
+      (this.optionB = this.data[0].subCat.map((t) => t.title)),
+      (this.optionC = this.data[0].subCat[0].items.map((t) => t)),
+      (this.selectedOptionC = [0]),
+      (this.selectedProducts = [this.data[0].subCat[0].items[0]]);
+  },
+  optionA: [],
+  optionB: [],
+  optionC: [],
+  selectedOptionA: 0,
+  selectedOptionB: 0,
+  selectedOptionC: [],
+  selectedProducts: [],
+  reloadData() {
+    const t =
+        this.data[this.selectedOptionA].subCat ??
+        this.data[this.selectedOptionA].items,
+      e = this.data[this.selectedOptionA]?.subCat
+        ? this.data[this.selectedOptionA].subCat[this.selectedOptionB].items
+        : [];
+    setTimeout(() => {
+      (this.optionB = t.map((i) => i.title ?? i)),
+        (this.optionC = e.length ? e.map((i) => i) : null);
+    }, 60);
+  },
+  resetOptionB() {
+    (this.selectedOptionB = 0),
+      (this.selectedOptionC = []),
+      parseInt(this.selectedOptionA) !== 3 &&
+        (setTimeout(() => {
+          document
+            .querySelectorAll('input[name="checkToggle"]')
+            .forEach((i) => (i.checked = !1)),
+            (this.selectedOptionC = [0]),
+            this.pushProducts();
+        }, 120),
+        [...document.querySelectorAll('input[name="optionB"]')].forEach(
+          (i, l) => {
+            l === 0 ? (i.checked = !0) : (i.checked = !1);
+          }
+        ),
+        [...document.querySelectorAll('input[name="optionC"]')].forEach(
+          (i, l) => {
+            l === 0 ? (i.checked = !0) : (i.checked = !1);
+          }
+        ));
+  },
+  resetOptionC() {
+    (this.selectedOptionC = []),
+      setTimeout(() => {
+        document
+          .querySelectorAll('input[name="checkToggle"]')
+          .forEach((t) => (t.checked = !1)),
+          (this.selectedOptionC = [0]),
+          this.pushProducts();
+      }, 120);
+  },
+  pushProducts(t = this.selectedOptionC) {
+    const e =
+      this.data[this.selectedOptionA].subCat[this.selectedOptionB].items;
+    this.selectedProducts = this.selectedOptionC.map((i) => e[i]);
+  },
+  removeProduct(t) {
+    this.selectedProducts.splice(t, 1),
+      this.selectedOptionC.splice(t, 1),
+      document
+        .querySelectorAll('input[name="checkToggle"]')
+        .forEach((e) => (e.checked = !1));
+  },
+  showPopup(t) {
+    const e = document.querySelector('.js-popup');
+    e._x_dataStack[0].getContent(t),
+      setTimeout(() => {
+        e._x_dataStack[0].showpopup = !0;
+      }, 120);
+  },
+  toggleCheckAll() {
+    document
+      .querySelectorAll('input[name="checkToggle"]')
+      .forEach((e) => (e.checked = !1));
+  },
+  checkAll() {
+    const t = document.querySelectorAll('input[name="optionC[]"]');
+    (this.selectedOptionC = [...t].map((e) => e.value)), this.pushProducts();
+  },
+  uncheckAll() {
+    document
+      .querySelectorAll('input[name="optionC[]"]:checked')
+      .forEach((e) => (e.checked = !1)),
+      (this.selectedOptionC = []),
+      (this.selectedProducts = []);
+  }
+}));
+const d = [
+  {
+    title: '油性オフセット',
+    subCat: [
+      {
+        title: '環境対応製品',
+        items: [
+          'スーパーユポダブル［ユポグリーンシリーズ］',
+          'スーパーユポ®［ユポグリーンシリーズ］',
+          'ウルトラユポ®［ユポグリーンシリーズ］'
+        ]
+      },
+      {
+        title: '一般品',
+        items: [
+          'ニューユポ',
+          'ウルトラユポ®［ユポグリーンシリーズ］',
+          'スーパーユポ®［ユポグリーンシリーズ］',
+          'スーパーユポダブル［ユポグリーンシリーズ］',
+          'ユポ®イッパン'
+        ]
+      },
+      { title: '高光沢品', items: ['ユポ®ハイグロス'] },
+      {
+        title: '半透明品',
+        items: ['ユポトレース®', 'ユポ®電飾用紙［ユポグリーンシリーズ］']
+      },
+      {
+        title: '厚手品',
+        items: ['アルファユポ®［一般品］', 'アルファユポ®［半透明］']
+      },
+      { title: '吸着品', items: ['ユポ®・サクションタック®', 'ユポ静電吸着®'] },
+      {
+        title: 'コート品',
+        items: [
+          '印字用ユポコート［片面コート］',
+          '印字用ユポコート［両面コート］',
+          'ユポ®カーボンレス'
+        ]
+      },
+      {
+        title: '貼合品',
+        items: [
+          'クロスユポ®［ダブル］',
+          'メタリックユポ',
+          'ハイティアーユポ®',
+          'コンシールユポ®'
+        ]
+      }
+    ]
+  },
+  {
+    title: 'UVオフセット',
+    subCat: [
+      {
+        title: '環境対応製品',
+        items: [
+          'ユポエアー',
+          'ウルトラユポ®［ユポグリーンシリーズ］',
+          'ユポタック®原紙［ユポグリーンシリーズ］',
+          'アクアユポ®[ユポグリーンシリーズ]'
+        ]
+      },
+      {
+        title: '一般品',
+        items: [
+          'ウルトラユポ®［ユポグリーンシリーズ］',
+          'ニューユポ',
+          'ユポ®デジタル印刷用紙［HP Indigo／プロダクションプリンター用］'
+        ]
+      },
+      { title: '高光沢品', items: ['ユポ®ハイグロス'] },
+      {
+        title: '半透明品',
+        items: ['ユポトレース®', 'ユポ®電飾用紙［ユポグリーンシリーズ］']
+      },
+      {
+        title: '厚手品',
+        items: ['アルファユポ®［一般品］', 'アルファユポ®［半透明］']
+      },
+      {
+        title: 'ラベル用',
+        items: [
+          'ユポエアー',
+          'ユポタック®原紙',
+          'ユポタック®原紙［ユポグリーンシリーズ］',
+          'ユポタック®原紙［熱転写印字対応］',
+          'ユポタック®原紙［高機能品］',
+          '易剥離ユポ',
+          '易破壊ユポ',
+          'アクアユポ®[ユポグリーンシリーズ]',
+          'ユポ®インモールドラベル［ブロー/インジェクション成形用］',
+          'ユポ®インモールドラベル［インジェクション成形用］'
+        ]
+      },
+      {
+        title: '吸着品',
+        items: [
+          'ユポ®・サクションタック®・アウトドア',
+          'ユポ®透明吸着',
+          'ユポ静電吸着®',
+          'ユポ静電吸着®［透明タイプ］'
+        ]
+      },
+      { title: '貼合品', items: ['コンシールユポ®'] }
+    ]
+  },
+  {
+    title: 'デジタル印刷',
+    subCat: [
+      {
+        title: '環境対応製品',
+        items: ['ユポ®電飾用紙［ユポグリーンシリーズ］']
+      },
+      {
+        title: '一般品',
+        items: [
+          'ユポ®デジタル印刷用紙［HP Indigo／プロダクションプリンター用］',
+          'ユポ®デジタル印刷用紙［HP Indigo用／厚手品］',
+          'ユポ®デジタル印刷用紙［UVインクジェット用］',
+          'ユポジェット®［インクジェット用］'
+        ]
+      },
+      { title: '高光沢品', items: ['ユポ®電飾用紙［ユポグリーンシリーズ］'] },
+      { title: 'ラベル用', items: ['ユポタック®原紙［高機能品］'] },
+      {
+        title: '吸着品',
+        items: [
+          'ユポ®・サクションタック®［インクジェット用］',
+          'ユポ®・サクションタック®［UVインクジェット用］',
+          'ユポ®・サクションタック®［HP Indigo用］',
+          'ユポ®透明吸着',
+          'ユポ静電吸着®［UVオフセット・UVインクジェット印刷用］',
+          'ユポ静電吸着®［HP Indigo用］'
+        ]
+      }
+    ]
+  },
+  {
+    title: 'その他',
+    items: [
+      'スクリーン印刷',
+      'UVシール印刷',
+      'グラビア印刷',
+      'フレキソ印刷',
+      'ビジネスフォーム印刷',
+      '枚葉活版印刷',
+      '非対応印刷方式'
+    ]
+  }
+];
+c.data('products_sp', () => ({
+  data: d,
   selectedOptionA: 0,
   selectedOptionB: 0,
   selectedOptionC: [],
@@ -456,7 +460,18 @@ s.data('products_sp', () => ({
       ].items.filter((e) => this.selectedOptionC.indexOf(e) > -1));
   },
   removeProduct(t) {
-    this.selectedProducts.splice(t, 1);
+    const e = this.selectedProducts.indexOf(t);
+    document.querySelectorAll('input[value="' + t + '"]').forEach((l) => {
+      (l.checked = !1),
+        setTimeout(() => {
+          l.dispatchEvent(new CustomEvent('change'));
+        }, 120);
+    }),
+      this.selectedProducts.splice(e, 1),
+      this.selectedOptionC.splice(e, 1),
+      document
+        .querySelectorAll('input[name="checkToggleSP"]')
+        .forEach((l) => (l.checked = !1));
   },
   resetInputs(t) {
     t.querySelectorAll('input').forEach((e) => (e.checked = !1)),
@@ -492,5 +507,18 @@ s.data('products_sp', () => ({
       .forEach((e) => (e.checked = !1)),
       (this.selectedOptionC = []),
       (this.selectedProducts = []);
+  },
+  closeOtherBlocks(t, e) {
+    [...e.querySelectorAll(':scope > div')]
+      .filter((l) => l !== t)
+      .forEach((l) => {
+        l.querySelectorAll('input').forEach((s) => (s.checked = !1)),
+          l
+            .querySelectorAll('div[x-data]')
+            .forEach((s) => (s._x_dataStack[0].open = !1)),
+          (l._x_dataStack[0].open = !1),
+          (this.selectedOptionC = []),
+          this.pushProducts();
+      });
   }
 }));
