@@ -1,6 +1,6 @@
-import { S as B, N as y } from './swiper.min.ffde7e0a.js';
-function E({ swiper: t, extendParams: f }) {
-  f({ grid: { rows: 1, fill: 'column' } });
+import { S as B, N as y } from './swiper.min.js';
+function E({ swiper: t, extendParams: d }) {
+  d({ grid: { rows: 1, fill: 'column' } });
   let s, p, c;
   const g = () => {
       let e = t.params.spaceBetween;
@@ -13,42 +13,44 @@ function E({ swiper: t, extendParams: f }) {
     },
     M = (e) => {
       const { slidesPerView: o } = t.params,
-        { rows: r, fill: m } = t.params.grid;
-      (p = s / r),
-        (c = Math.floor(e / r)),
-        Math.floor(e / r) === e / r ? (s = e) : (s = Math.ceil(e / r) * r),
-        o !== 'auto' && m === 'row' && (s = Math.max(s, o * r));
+        { rows: n, fill: m } = t.params.grid;
+      (c = Math.floor(e / n)),
+        Math.floor(e / n) === e / n ? (s = e) : (s = Math.ceil(e / n) * n),
+        o !== 'auto' && m === 'row' && (s = Math.max(s, o * n)),
+        (p = s / n);
     },
-    x = (e, o, r, m) => {
+    x = (e, o, n, m) => {
       const { slidesPerGroup: a } = t.params,
-        d = g(),
-        { rows: n, fill: w } = t.params.grid;
-      let u, l, i;
+        f = g(),
+        { rows: i, fill: w } = t.params.grid;
+      let u, l, r;
       if (w === 'row' && a > 1) {
-        const S = Math.floor(e / (a * n)),
-          h = e - n * a * S,
-          v = S === 0 ? a : Math.min(Math.ceil((r - S * n * a) / n), a);
-        (i = Math.floor(h / v)),
-          (l = h - i * v + S * a),
-          (u = l + (i * s) / n),
+        const S = Math.floor(e / (a * i)),
+          h = e - i * a * S,
+          v = S === 0 ? a : Math.min(Math.ceil((n - S * i * a) / i), a);
+        (r = Math.floor(h / v)),
+          (l = h - r * v + S * a),
+          (u = l + (r * s) / i),
           (o.style.order = u);
       } else
         w === 'column'
-          ? ((l = Math.floor(e / n)),
-            (i = e - l * n),
-            (l > c || (l === c && i === n - 1)) &&
-              ((i += 1), i >= n && ((i = 0), (l += 1))))
-          : ((i = Math.floor(e / p)), (l = e - i * p));
-      o.style[m('margin-top')] = i !== 0 ? d && `${d}px` : '';
+          ? ((l = Math.floor(e / i)),
+            (r = e - l * i),
+            (l > c || (l === c && r === i - 1)) &&
+              ((r += 1), r >= i && ((r = 0), (l += 1))))
+          : ((r = Math.floor(e / p)), (l = e - r * p));
+      (o.row = r),
+        (o.column = l),
+        (o.style[m('margin-top')] = r !== 0 ? f && `${f}px` : '');
     },
-    z = (e, o, r) => {
+    z = (e, o, n) => {
       const { centeredSlides: m, roundLengths: a } = t.params,
-        d = g(),
-        { rows: n } = t.params.grid;
+        f = g(),
+        { rows: i } = t.params.grid;
       if (
-        ((t.virtualSize = (e + d) * s),
-        (t.virtualSize = Math.ceil(t.virtualSize / n) - d),
-        (t.wrapperEl.style[r('width')] = `${t.virtualSize + d}px`),
+        ((t.virtualSize = (e + f) * s),
+        (t.virtualSize = Math.ceil(t.virtualSize / i) - f),
+        (t.wrapperEl.style[n('width')] = `${t.virtualSize + f}px`),
         m)
       ) {
         const w = [];
@@ -62,10 +64,10 @@ function E({ swiper: t, extendParams: f }) {
   t.grid = { initSlides: M, updateSlide: x, updateWrapperSize: z };
 }
 document.addEventListener('alpine:initialized', () => {
-  document.querySelectorAll('.swiper').forEach((f) => {
-    const s = f.querySelector('.swiper-button-prev'),
-      p = f.querySelector('.swiper-button-next');
-    new B(f, {
+  document.querySelectorAll('.swiper').forEach((d) => {
+    const s = d.querySelector('.swiper-button-prev'),
+      p = d.querySelector('.swiper-button-next');
+    new B(d, {
       modules: [y, E],
       slidesPerView: 1,
       spaceBetween: 20,

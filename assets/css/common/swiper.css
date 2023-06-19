@@ -147,6 +147,12 @@ swiper-slide {
 .swiper-vertical.swiper-css-mode > .swiper-wrapper {
   scroll-snap-type: y mandatory;
 }
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper {
+  scroll-snap-type: none;
+}
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: none;
+}
 .swiper-centered > .swiper-wrapper:before {
   content: '';
   flex-shrink: 0;

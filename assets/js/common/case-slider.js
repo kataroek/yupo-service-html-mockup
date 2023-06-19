@@ -4,8 +4,8 @@ import {
   e as A,
   S as F,
   N as j
-} from './swiper.min.ffde7e0a.js';
-function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
+} from './swiper.min.js';
+function G({ swiper: e, extendParams: L, on: r, emit: u, params: M }) {
   (e.autoplay = { running: !1, paused: !1, timeLeft: 0 }),
     L({
       autoplay: {
@@ -18,10 +18,10 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
         pauseOnMouseEnter: !1
       }
     });
-  let M,
+  let S,
     x,
-    s = h && h.autoplay ? h.autoplay.delay : 3e3,
-    t = h && h.autoplay ? h.autoplay.delay : 3e3,
+    s = M && M.autoplay ? M.autoplay.delay : 3e3,
+    t = M && M.autoplay ? M.autoplay.delay : 3e3,
     i,
     y = new Date().getTime,
     c,
@@ -35,7 +35,7 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
       e.destroyed ||
       !e.wrapperEl ||
       (n.target === e.wrapperEl &&
-        (e.wrapperEl.removeEventListener('transitionend', a), S()));
+        (e.wrapperEl.removeEventListener('transitionend', a), h()));
   }
   const b = () => {
       if (e.destroyed || !e.autoplay.running) return;
@@ -90,8 +90,8 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
         };
       return (
         g > 0
-          ? (clearTimeout(M),
-            (M = setTimeout(() => {
+          ? (clearTimeout(S),
+            (S = setTimeout(() => {
               C();
             }, g)))
           : requestAnimationFrame(() => {
@@ -105,18 +105,18 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
     },
     o = () => {
       (e.autoplay.running = !1),
-        clearTimeout(M),
+        clearTimeout(S),
         cancelAnimationFrame(x),
         u('autoplayStop');
     },
     l = (n, g) => {
       if (e.destroyed || !e.autoplay.running) return;
-      clearTimeout(M), n || (v = !0);
+      clearTimeout(S), n || (v = !0);
       const f = () => {
         u('autoplayPause'),
           e.params.autoplay.waitForTransition
             ? e.wrapperEl.addEventListener('transitionend', a)
-            : S();
+            : h();
       };
       if (((e.autoplay.paused = !0), g)) {
         m && (i = e.params.autoplay.delay), (m = !1), f();
@@ -125,7 +125,7 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
       (i = (i || e.params.autoplay.delay) - (new Date().getTime() - y)),
         !(e.isEnd && i < 0 && !e.params.loop) && (i < 0 && (i = 0), f());
     },
-    S = () => {
+    h = () => {
       (e.isEnd && i < 0 && !e.params.loop) ||
         e.destroyed ||
         !e.autoplay.running ||
@@ -138,13 +138,13 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
       if (e.destroyed || !e.autoplay.running) return;
       const n = O();
       n.visibilityState === 'hidden' && ((v = !0), l(!0)),
-        n.visibilityState === 'visible' && S();
+        n.visibilityState === 'visible' && h();
     },
     R = (n) => {
       n.pointerType === 'mouse' && ((v = !0), l(!0));
     },
     q = (n) => {
-      n.pointerType === 'mouse' && e.autoplay.paused && S();
+      n.pointerType === 'mouse' && e.autoplay.paused && h();
     },
     N = () => {
       e.params.autoplay.pauseOnMouseEnter &&
@@ -190,19 +190,19 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: h }) {
       if (!(e.destroyed || !e.autoplay.running || !d)) {
         if (
           (clearTimeout(I),
-          clearTimeout(M),
+          clearTimeout(S),
           e.params.autoplay.disableOnInteraction)
         ) {
           (E = !1), (d = !1);
           return;
         }
-        E && e.params.cssMode && S(), (E = !1), (d = !1);
+        E && e.params.cssMode && h(), (E = !1), (d = !1);
       }
     }),
     r('slideChange', () => {
       e.destroyed || !e.autoplay.running || (m = !0);
     }),
-    Object.assign(e.autoplay, { start: B, stop: o, pause: l, resume: S });
+    Object.assign(e.autoplay, { start: B, stop: o, pause: l, resume: h });
 }
 function H({ swiper: e, extendParams: L, emit: r, once: u }) {
   L({
@@ -217,14 +217,16 @@ function H({ swiper: e, extendParams: L, emit: r, once: u }) {
       minimumVelocity: 0.02
     }
   });
-  function h() {
+  function M() {
+    if (e.params.cssMode) return;
     const s = e.getTranslate();
     e.setTranslate(s),
       e.setTransition(0),
       (e.touchEventsData.velocities.length = 0),
       e.freeMode.onTouchEnd({ currentPos: e.rtl ? e.translate : -e.translate });
   }
-  function M() {
+  function S() {
+    if (e.params.cssMode) return;
     const { touchEventsData: s, touches: t } = e;
     s.velocities.length === 0 &&
       s.velocities.push({
@@ -237,6 +239,7 @@ function H({ swiper: e, extendParams: L, emit: r, once: u }) {
       });
   }
   function x({ currentPos: s }) {
+    if (e.params.cssMode) return;
     const {
         params: t,
         wrapperEl: i,
@@ -259,9 +262,9 @@ function H({ swiper: e, extendParams: L, emit: r, once: u }) {
       if (d.velocities.length > 1) {
         const o = d.velocities.pop(),
           l = d.velocities.pop(),
-          S = o.position - l.position,
+          h = o.position - l.position,
           P = o.time - l.time;
-        (e.velocity = S / P),
+        (e.velocity = h / P),
           (e.velocity /= 2),
           Math.abs(e.velocity) < t.freeMode.minimumVelocity && (e.velocity = 0),
           (P > 150 || V() - o.time > 300) && (e.velocity = 0);
@@ -371,7 +374,7 @@ function H({ swiper: e, extendParams: L, emit: r, once: u }) {
       (e.updateProgress(), e.updateActiveIndex(), e.updateSlidesClasses());
   }
   Object.assign(e, {
-    freeMode: { onTouchStart: h, onTouchMove: M, onTouchEnd: x }
+    freeMode: { onTouchStart: M, onTouchMove: S, onTouchEnd: x }
   });
 }
 const X = document.querySelector('.logo-scroll'),

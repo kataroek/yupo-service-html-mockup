@@ -1,4 +1,4 @@
-import { m as c } from './module.esm.c6423134.js';
+import { m as c } from './module.esm.js';
 const o = [
   {
     title: 'スクリーン印刷',
