@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll-p-20">
 
 <head>
   <meta charset="UTF-8">
@@ -28,7 +28,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/common/swiper-free-mode.css" />
   <link rel="stylesheet" href="/assets/css/common/style.css" />
   <link rel="stylesheet" href="/assets/css/common/swiper.css" />
   <link rel="stylesheet" href="/assets/css/common/swiper-grid.css" />
@@ -59,22 +58,19 @@
         <div class="absolute right-0 top-0 bg-[#EFF1F1] rounded-bl-lg py-1.5 px-5">
           <ul class="text-xs flex gap-6">
             <li>
-              <a href="/sustainability/">ブランドオーナーさまへ</a>
+              <a class="hover:opacity-50" href="/sustainability/">ブランドオーナーさまへ</a>
             </li>
             <li>
-              <a href="/partner/">印刷会社／広告代理店さまへ</a>
+              <a class="hover:opacity-50" href="/partner/">印刷会社／広告代理店さまへ</a>
             </li>
             <li>
-              <a href="/release/">お知らせ</a>
+              <a class="hover:opacity-50" href="/release/">お知らせ・コラム</a>
             </li>
             <li>
-              <a href="/release/">コラム</a>
+              <a class="hover:opacity-50" href="/faq/">よくある質問</a>
             </li>
             <li>
-              <a href="/faq/">よくある質問</a>
-            </li>
-            <li>
-              <a class="inline-flex gap-1" href="tel:0352810815">
+              <a class="inline-flex gap-1 hover:opacity-50" href="tel:0352810815">
                 <img class="w-3 invert" src="/assets/img/common/icon-phone.svg" alt="icon-phone">
                 <span>03-5281-0815</span>
               </a>
@@ -85,7 +81,7 @@
         <nav class="pt-8">
           <ul class="font-bold flex justify-end items-center gap-6 text-sm xl:gap-8">
             <li class="group relative">
-              <a class="inline-flex gap-2 items-center" href="#">
+              <a class="inline-flex gap-2 items-center hover:opacity-50" href="#">
                 <span>製品紹介</span>
                 <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
               </a>
@@ -125,13 +121,13 @@
               </ul>
             </li>
             <li>
-              <a href="/sustainability/">サステナビリティ</a>
+              <a class="hover:opacity-50" href="/sustainability/">サステナビリティ</a>
             </li>
             <li>
-              <a href="/feature/">特長</a>
+              <a class="hover:opacity-50" href="/feature/">特長</a>
             </li>
             <li class="group relative">
-              <a class="inline-flex gap-2 items-center" href="#">
+              <a class="inline-flex gap-2 items-center hover:opacity-50" href="#">
                 <span>導入をご検討の方</span>
                 <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
               </a>
@@ -155,7 +151,7 @@
               </ul>
             </li>
             <li>
-              <a href="/contact/">お問い合わせ</a>
+              <a class="hover:opacity-50" href="/contact/">お問い合わせ</a>
             </li>
             <li>
               <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 text-sm px-4"
@@ -239,10 +235,7 @@
               <a href="/partner/">印刷会社／広告代理店さまへ</a>
             </li>
             <li>
-              <a href="/release/">お知らせ</a>
-            </li>
-            <li>
-              <a href="/release/">コラム</a>
+              <a href="/release/">お知らせ・コラム</a>
             </li>
             <li>
               <a href="/faq/">よくある質問</a>
@@ -346,140 +339,184 @@
           </li>
         </ul>
         <div class="text-[8px] text-[#737876] md:text-[10px] lg:text-right">
-          ※ 0.3mm厚のユポをPPシートと比較した場合（CO<sub>2</sub>排出量は原料工程）。当社調べ。
+          ※0.3mm厚のユポをPPシートと比較した場合（CO<sub>2</sub>排出量は原料工程）。当社調べ。
         </div>
       </div>
     </div>
-    <div class="logo-scroll pb-3 md:pb-6 lg:pb-12">
+    <div class="logo-scroll py-2 space-y-2 md:py-4 md:space-y-4">
       <div class="swiper">
         <div class="swiper-wrapper !ease-linear">
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-1.jpg" alt="logo-1">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-16.jpg" alt="logo-16">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-2.jpg" alt="logo-2">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-15.jpg" alt="logo-15">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-3.jpg" alt="logo-3">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-14.jpg" alt="logo-14">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-4.jpg" alt="logo-4">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-13.jpg" alt="logo-13">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-5.jpg" alt="logo-5">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-12.jpg" alt="logo-12">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-6.jpg" alt="logo-6">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-11.jpg" alt="logo-11">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-7.jpg" alt="logo-7">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-10.jpg" alt="logo-10">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-8.jpg" alt="logo-8">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-9.jpg" alt="logo-9">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-9.jpg" alt="logo-9">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-8.jpg" alt="logo-8">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-10.jpg" alt="logo-10">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-7.jpg" alt="logo-7">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-11.jpg" alt="logo-11">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-6.jpg" alt="logo-6">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-12.jpg" alt="logo-12">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-5.jpg" alt="logo-5">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-13.jpg" alt="logo-13">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-4.jpg" alt="logo-4">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-14.jpg" alt="logo-14">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-3.jpg" alt="logo-3">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-15.jpg" alt="logo-15">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-2.jpg" alt="logo-2">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-16.jpg" alt="logo-16">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-1.jpg" alt="logo-1">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-1.jpg" alt="logo-1">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-16.jpg" alt="logo-16">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-2.jpg" alt="logo-2">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-15.jpg" alt="logo-15">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-3.jpg" alt="logo-3">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-14.jpg" alt="logo-14">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-4.jpg" alt="logo-4">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-13.jpg" alt="logo-13">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-5.jpg" alt="logo-5">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-12.jpg" alt="logo-12">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-6.jpg" alt="logo-6">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-11.jpg" alt="logo-11">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-7.jpg" alt="logo-7">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-10.jpg" alt="logo-10">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-8.jpg" alt="logo-8">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-9.jpg" alt="logo-9">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-9.jpg" alt="logo-9">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-8.jpg" alt="logo-8">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-10.jpg" alt="logo-10">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-7.jpg" alt="logo-7">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-11.jpg" alt="logo-11">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-6.jpg" alt="logo-6">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-12.jpg" alt="logo-12">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-5.jpg" alt="logo-5">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-13.jpg" alt="logo-13">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-4.jpg" alt="logo-4">
+        </div>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper !ease-linear">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-14.jpg" alt="logo-14">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-3.jpg" alt="logo-3">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-15.jpg" alt="logo-15">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-2.jpg" alt="logo-2">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
           </div>
-          <div class="swiper-slide !w-auto p-4 h-[200px] flex justify-between flex-col">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-16.jpg" alt="logo-16">
-            <img class="w-[120px] h-[80px] object-contain" src="/assets/img/common/logo-1.jpg" alt="logo-1">
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
+          </div>
+          <div class="swiper-slide !w-[90px] md:!w-[180px]">
+            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
           </div>
         </div>
       </div>
@@ -653,7 +690,7 @@
             </div>
             <p>
               <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12"
-                href="/contact">
+                href="/contact/">
                 <span>お問い合わせ</span>
                 <span>
                   <img src="/assets/img/common/icon-mail.svg" alt="icon">
@@ -689,9 +726,9 @@
                   <span class="block">ユポは環境にやさしい<br>フィルム素材・ラベル素材として<br>活躍しています</span>
                 </h3>
                 <div>
-                  ユポは微細な空孔（ミクロボイド）を内部に形成させることにより、プラスチック使用量とCO<sub>2</sub>排出量を約45%削減※が可能です。そのため、ユポを選択頂くことで環境に配慮した製品を手軽につくることができます。優れた耐久性と耐水性を評価され、印刷用途で幅広い支持を獲得しているユポ。資源の節約と環境保護に貢献するだけでなく、高い品質と性能を実現する素材として、身の回りから工業用途まで様々な用途で活用されています。※0.3mm厚のユポをPPシートと比較した場合（CO<sub>2</sub>排出量は原料工程）。当社調べ
+                  ユポは微細な空孔（ミクロボイド）を内部に形成させることにより、プラスチック使用量とCO<sub>2</sub>排出量を約45%削減<sup>※</sup>が可能です。そのため、ユポを選択頂くことで環境に配慮した製品を手軽につくることができます。優れた耐久性と耐水性を評価され、印刷用途で幅広い支持を獲得しているユポ。資源の節約と環境保護に貢献するだけでなく、高い品質と性能を実現する素材として、身の回りから工業用途まで様々な用途で活用されています。
                 </div>
-
+                <div class="text-[#737876] text-[10px]">※0.3mm厚のユポをPPシートと比較した場合（CO<sub>2</sub>排出量は原料工程）。当社調べ</div>
               </div>
               <div>
                 <img class="w-full rounded-lg" src="https://dummyimage.com/490x440.jpg"
@@ -722,7 +759,7 @@
                   <div class="w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E]"></div>
                   <div class="space-y-2">
                     <p>
-                      ユポは医療現場やクリーンルームでも幅広く信頼されています。その秘密は、紙※とくらべてわずか1/150の低発塵性と優れた耐薬品性。これにより、採血管ラベル、病院で使用するリストバンド、歯科セメントの練り台紙、カテーテルを包装する台紙など、様々な医療用途での使用が可能です。ラベルには耐薬品性とクリーン性が求められ、リストバンドには破れにくさと情報印字の可能性が必要です。カテーテル包装の台紙には衛生性が重視されます。帯電しにくいため、ホコリの付着も抑えられています。
+                      ユポは医療現場やクリーンルームでも幅広く信頼されています。その秘密は、紙<sup>※</sup>とくらべてわずか1/150の低発塵性と優れた耐薬品性。これにより、採血管ラベル、病院で使用するリストバンド、歯科セメントの練り台紙、カテーテルを包装する台紙など、様々な医療用途での使用が可能です。ラベルには耐薬品性とクリーン性が求められ、リストバンドには破れにくさと情報印字の可能性が必要です。カテーテル包装の台紙には衛生性が重視されます。帯電しにくいため、ホコリの付着も抑えられています。
                     </p>
                   </div>
                   <div class="text-[#737876] text-[10px]">※一般的なコピー用紙と比較、当社調べ</div>
@@ -755,8 +792,7 @@
                     class="hidden font-bold text-sm/none text-white bg-gradient-to-br from-[#4AC071] to-[#3E765E] rounded-full py-1 px-3">課題01を解決！</span>
                   <span class="block">省エネ・歩留まり改善・<br>省力化にユポは貢献します</span>
                 </h3>
-                <div>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                <div>ユポは多様な特性を持つ素材として様々な産業で活用されています。その強度、耐久性、そして柔軟性が様々な用途に合う形で応用され、製品の品質向上や生産性の向上、工程の省エネ化などに貢献しています。
                 </div>
 
               </div>
@@ -822,7 +858,7 @@
                   <span class="block">ユポは安心の国内生産・<br>国内開発体制を整えています</span>
                 </h3>
                 <div>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  ユポ・コーポレーションは1969年に三菱ケミカルと王子製紙ホールディングスにより設立されました。40年以上にわたり、国内向けには鹿島向上からの安定的な供給を行っています。また、1998年からは米国での生産、2000年からはヨーロッパとアフリカでの販売も開始。現在は世界トップの合成紙メーカーとして、グローバルな供給体制を築いています。
                 </div>
 
               </div>
@@ -876,7 +912,7 @@
           <div class="space-y-3">
             <p>
               <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12"
-                href="/contact">
+                href="/contact/">
                 <span>お問い合わせ</span>
                 <span>
                   <img src="/assets/img/common/icon-mail.svg" alt="icon">
@@ -1287,7 +1323,7 @@
           <div class="space-y-3">
             <p>
               <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12"
-                href="/contact">
+                href="/contact/">
                 <span>お問い合わせ</span>
                 <span>
                   <img src="/assets/img/common/icon-mail.svg" alt="icon">
@@ -1302,7 +1338,7 @@
     <div class="bg-white py-10 md:py-20">
       <div class="w-full max-w-[1040px] mx-auto px-5">
         <a class="group overflow-hidden w-full max-w-[600px] mx-auto rounded-lg border flex items-center justify-center h-20 hover:bg-[#3E765E] hover:text-white hover:border-[#3E765E] md:h-24"
-          href="#">
+          href="/partner/#product-compare-table">
           <span class="inline-flex items-center gap-3">
             <span class="font-bold text-base/tight md:text-xl/tight">製品グレード<br class="md:hidden">詳細はこちら</span>
             <svg class="fill-[#3E765E] flex-none w-5 h-5 group-hover:fill-white" width="16" height="16"
@@ -1328,75 +1364,72 @@
           </header>
 
           <div class="space-y-6">
-            <h3 class="font-bold">QAカテゴリ名</h3>
-            <div class="space-y-6">
-              <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                x-data="{active: false}" x-bind:class="{'active': active}">
-                <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                  x-on:click="active = !active">
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                  <span class="flex-auto">記事の文字数は？</span>
-                  <span
-                    class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                </h4>
-                <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                  <span
-                    class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                </div>
+            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
+              x-bind:class="{'active': active}">
+              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+                x-on:click="active = !active">
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
+                <span class="flex-auto">記事の文字数は？</span>
+                <span
+                  class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
+              </h4>
+              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
+                <span
+                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
               </div>
-              <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                x-data="{active: false}" x-bind:class="{'active': active}">
-                <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                  x-on:click="active = !active">
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                  <span class="flex-auto">記事の文字数は？</span>
-                  <span
-                    class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                </h4>
-                <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                  <span
-                    class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                </div>
+            </div>
+            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
+              x-bind:class="{'active': active}">
+              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+                x-on:click="active = !active">
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
+                <span class="flex-auto">記事の文字数は？</span>
+                <span
+                  class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
+              </h4>
+              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
+                <span
+                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
               </div>
-              <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                x-data="{active: false}" x-bind:class="{'active': active}">
-                <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                  x-on:click="active = !active">
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                  <span class="flex-auto">記事の文字数は？</span>
-                  <span
-                    class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                </h4>
-                <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                  <span
-                    class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                </div>
+            </div>
+            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
+              x-bind:class="{'active': active}">
+              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+                x-on:click="active = !active">
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
+                <span class="flex-auto">記事の文字数は？</span>
+                <span
+                  class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
+              </h4>
+              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
+                <span
+                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
               </div>
-              <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                x-data="{active: false}" x-bind:class="{'active': active}">
-                <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                  x-on:click="active = !active">
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                  <span class="flex-auto">記事の文字数は？</span>
-                  <span
-                    class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                </h4>
-                <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                  <span
-                    class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                  <span
-                    class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                </div>
+            </div>
+            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
+              x-bind:class="{'active': active}">
+              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+                x-on:click="active = !active">
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
+                <span class="flex-auto">記事の文字数は？</span>
+                <span
+                  class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
+              </h4>
+              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+                <span
+                  class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
+                <span
+                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
               </div>
             </div>
           </div>
@@ -1419,9 +1452,12 @@
     <div class="bg-[--bg-color] py-6" style="--bg-color:#E6EBE9">
       <div class="w-full max-w-[1040px] mx-auto px-5">
         <ul
-          class="text-xs flex flex-wrap gap-2 [&_a:hover]:opacity-50 [&>li]:inline-flex [&>li]:gap-2 [&>li:not(:first-child):before]:content-['>']">
+          class="text-xs flex flex-wrap gap-2 [&_a:hover]:opacity-50 [&>li]:flex [&>li]:gap-2 [&>li:not(:first-child):before]:content-['>']">
           <li><a href="/">ホーム</a></li>
-          <li><span>機能材料・産業資材</span></li>
+
+          <li>
+            <span>機能材料・産業資材</span>
+          </li>
         </ul>
       </div>
     </div>
@@ -1442,7 +1478,7 @@
 
         <div class="flex flex-col items-center gap-6 lg:flex-row">
           <a class="flex-1 w-full max-w-[480px] bg-white rounded-xl text-center text-black p-5 space-y-3 group hover:opacity-90 md:py-10 md:space-y-6"
-            href="/documents">
+            href="/documents/">
             <div class="space-y-3">
               <div class="text-sm md:text-base">より詳しい情報を資料で確認・共有したい</div>
               <h3 class="font-bold text-xl md:text-2xl">
@@ -1461,7 +1497,7 @@
             </div>
           </a><a
             class="flex-1 w-full max-w-[480px] bg-white rounded-xl text-center text-black p-5 space-y-3 group hover:opacity-90 md:py-10 md:space-y-6"
-            href="/contact">
+            href="/contact/">
             <div class="space-y-3">
               <div class="text-sm md:text-base">まずは直接相談して色々聞きたい</div>
               <h3 class="font-bold text-xl md:text-2xl">

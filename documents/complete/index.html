@@ -34,8 +34,8 @@
 
 <body>
 
-  <header class="bg-white sticky top-0 left-0 z-50 w-full py-4 shadow" x-data="{showmenu: false}">
-    <div class="flex items-center justify-between px-5 gap-6">
+  <header class="bg-white sticky top-0 left-0 z-50 w-full py-4 shadow lg:py-2" x-data="{showmenu: false}">
+    <div class="flex items-center justify-between px-5 gap-6 lg:min-h-[76px]">
       <a href="/">
         <img class="w-[190px] xl:w-[254px]" src="/assets/img/common/com_logo01.png" alt="紙・合成紙のユポ・コーポレーション">
       </a>
@@ -109,7 +109,26 @@
     </section>
 
   </main>
+  <footer class="bg-white py-6">
+    <div class="w-full max-w-[1040px] mx-auto px-5">
+      <div class="w-full max-w-[800px] mx-auto space-y-4">
+        <div class="text-[10px] text-[#656565]">
+          <ul class="flex justify-center gap-6 [&_a]:underline [&_a:hover]:opacity-50 md:justify-end">
+            <li>
+              <a href="https://japan.yupo.com/privacypolicy.html" target="_blank">プライバシーポリシー</a>
+            </li>
+            <li>
+              <a href="https://japan.yupo.com/sitepolicy.html" target="_blank">情報セキュリティ基本方針</a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="text-center w-full text-[10px] font-thin tracking-wider md:text-right">
+          &copy; YUPO CORPORATIONh All Right Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

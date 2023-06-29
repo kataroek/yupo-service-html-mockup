@@ -1,13 +1,7 @@
-import {
-  g as O,
-  n as V,
-  e as A,
-  S as F,
-  N as j
-} from './swiper.min.js';
-function G({ swiper: e, extendParams: L, on: r, emit: u, params: M }) {
+import { g as D, S as F, N as j } from './swiper.min.js';
+function k({ swiper: e, extendParams: T, on: u, emit: a, params: i }) {
   (e.autoplay = { running: !1, paused: !1, timeLeft: 0 }),
-    L({
+    T({
       autoplay: {
         enabled: !1,
         delay: 3e3,
@@ -18,386 +12,214 @@ function G({ swiper: e, extendParams: L, on: r, emit: u, params: M }) {
         pauseOnMouseEnter: !1
       }
     });
-  let S,
-    x,
-    s = M && M.autoplay ? M.autoplay.delay : 3e3,
-    t = M && M.autoplay ? M.autoplay.delay : 3e3,
-    i,
-    y = new Date().getTime,
-    c,
-    d,
+  let d,
     E,
-    I,
-    m,
-    v;
-  function a(n) {
+    b = i && i.autoplay ? i.autoplay.delay : 3e3,
+    p = i && i.autoplay ? i.autoplay.delay : 3e3,
+    o,
+    c = new Date().getTime,
+    L,
+    v,
+    y,
+    O,
+    h,
+    r;
+  function P(t) {
     !e ||
       e.destroyed ||
       !e.wrapperEl ||
-      (n.target === e.wrapperEl &&
-        (e.wrapperEl.removeEventListener('transitionend', a), h()));
+      (t.target === e.wrapperEl &&
+        (e.wrapperEl.removeEventListener('transitionend', P), s()));
   }
-  const b = () => {
+  const B = () => {
       if (e.destroyed || !e.autoplay.running) return;
-      e.autoplay.paused ? (c = !0) : c && ((t = i), (c = !1));
-      const n = e.autoplay.paused ? i : y + t - new Date().getTime();
-      (e.autoplay.timeLeft = n),
-        u('autoplayTimeLeft', n, n / s),
-        (x = requestAnimationFrame(() => {
-          b();
+      e.autoplay.paused ? (L = !0) : L && ((p = o), (L = !1));
+      const t = e.autoplay.paused ? o : c + p - new Date().getTime();
+      (e.autoplay.timeLeft = t),
+        a('autoplayTimeLeft', t, t / b),
+        (E = requestAnimationFrame(() => {
+          B();
         }));
     },
-    D = () => {
-      let n;
+    N = () => {
+      let t;
       return (
         e.virtual && e.params.virtual.enabled
-          ? (n = e.slides.filter((f) =>
-              f.classList.contains('swiper-slide-active')
+          ? (t = e.slides.filter((n) =>
+              n.classList.contains('swiper-slide-active')
             )[0])
-          : (n = e.slides[e.activeIndex]),
-        n ? parseInt(n.getAttribute('data-swiper-autoplay'), 10) : void 0
+          : (t = e.slides[e.activeIndex]),
+        t ? parseInt(t.getAttribute('data-swiper-autoplay'), 10) : void 0
       );
     },
-    T = (n) => {
+    g = (t) => {
       if (e.destroyed || !e.autoplay.running) return;
-      cancelAnimationFrame(x), b();
-      let g = typeof n > 'u' ? e.params.autoplay.delay : n;
-      (s = e.params.autoplay.delay), (t = e.params.autoplay.delay);
-      const f = D();
-      !Number.isNaN(f) &&
-        f > 0 &&
-        typeof n > 'u' &&
-        ((g = f), (s = f), (t = f)),
-        (i = g);
-      const p = e.params.speed,
-        C = () => {
+      cancelAnimationFrame(E), B();
+      let l = typeof t > 'u' ? e.params.autoplay.delay : t;
+      (b = e.params.autoplay.delay), (p = e.params.autoplay.delay);
+      const n = N();
+      !Number.isNaN(n) &&
+        n > 0 &&
+        typeof t > 'u' &&
+        ((l = n), (b = n), (p = n)),
+        (o = l);
+      const m = e.params.speed,
+        V = () => {
           !e ||
             e.destroyed ||
             (e.params.autoplay.reverseDirection
               ? !e.isBeginning || e.params.loop || e.params.rewind
-                ? (e.slidePrev(p, !0, !0), u('autoplay'))
+                ? (e.slidePrev(m, !0, !0), a('autoplay'))
                 : e.params.autoplay.stopOnLastSlide ||
-                  (e.slideTo(e.slides.length - 1, p, !0, !0), u('autoplay'))
+                  (e.slideTo(e.slides.length - 1, m, !0, !0), a('autoplay'))
               : !e.isEnd || e.params.loop || e.params.rewind
-              ? (e.slideNext(p, !0, !0), u('autoplay'))
+              ? (e.slideNext(m, !0, !0), a('autoplay'))
               : e.params.autoplay.stopOnLastSlide ||
-                (e.slideTo(0, p, !0, !0), u('autoplay')),
+                (e.slideTo(0, m, !0, !0), a('autoplay')),
             e.params.cssMode &&
-              ((y = new Date().getTime()),
+              ((c = new Date().getTime()),
               requestAnimationFrame(() => {
-                T();
+                g();
               })));
         };
       return (
-        g > 0
-          ? (clearTimeout(S),
-            (S = setTimeout(() => {
-              C();
-            }, g)))
+        l > 0
+          ? (clearTimeout(d),
+            (d = setTimeout(() => {
+              V();
+            }, l)))
           : requestAnimationFrame(() => {
-              C();
+              V();
             }),
-        g
+        l
       );
     },
-    B = () => {
-      (e.autoplay.running = !0), T(), u('autoplayStart');
+    q = () => {
+      (e.autoplay.running = !0), g(), a('autoplayStart');
     },
-    o = () => {
+    S = () => {
       (e.autoplay.running = !1),
-        clearTimeout(S),
-        cancelAnimationFrame(x),
-        u('autoplayStop');
+        clearTimeout(d),
+        cancelAnimationFrame(E),
+        a('autoplayStop');
     },
-    l = (n, g) => {
+    f = (t, l) => {
       if (e.destroyed || !e.autoplay.running) return;
-      clearTimeout(S), n || (v = !0);
-      const f = () => {
-        u('autoplayPause'),
+      clearTimeout(d), t || (r = !0);
+      const n = () => {
+        a('autoplayPause'),
           e.params.autoplay.waitForTransition
-            ? e.wrapperEl.addEventListener('transitionend', a)
-            : h();
+            ? e.wrapperEl.addEventListener('transitionend', P)
+            : s();
       };
-      if (((e.autoplay.paused = !0), g)) {
-        m && (i = e.params.autoplay.delay), (m = !1), f();
+      if (((e.autoplay.paused = !0), l)) {
+        h && (o = e.params.autoplay.delay), (h = !1), n();
         return;
       }
-      (i = (i || e.params.autoplay.delay) - (new Date().getTime() - y)),
-        !(e.isEnd && i < 0 && !e.params.loop) && (i < 0 && (i = 0), f());
+      (o = (o || e.params.autoplay.delay) - (new Date().getTime() - c)),
+        !(e.isEnd && o < 0 && !e.params.loop) && (o < 0 && (o = 0), n());
     },
-    h = () => {
-      (e.isEnd && i < 0 && !e.params.loop) ||
+    s = () => {
+      (e.isEnd && o < 0 && !e.params.loop) ||
         e.destroyed ||
         !e.autoplay.running ||
-        ((y = new Date().getTime()),
-        v ? ((v = !1), T(i)) : T(),
+        ((c = new Date().getTime()),
+        r ? ((r = !1), g(o)) : g(),
         (e.autoplay.paused = !1),
-        u('autoplayResume'));
+        a('autoplayResume'));
     },
-    P = () => {
+    A = () => {
       if (e.destroyed || !e.autoplay.running) return;
-      const n = O();
-      n.visibilityState === 'hidden' && ((v = !0), l(!0)),
-        n.visibilityState === 'visible' && h();
+      const t = D();
+      t.visibilityState === 'hidden' && ((r = !0), f(!0)),
+        t.visibilityState === 'visible' && s();
     },
-    R = (n) => {
-      n.pointerType === 'mouse' && ((v = !0), l(!0));
+    I = (t) => {
+      t.pointerType === 'mouse' && ((r = !0), f(!0));
     },
-    q = (n) => {
-      n.pointerType === 'mouse' && e.autoplay.paused && h();
+    M = (t) => {
+      t.pointerType === 'mouse' && e.autoplay.paused && s();
     },
-    N = () => {
+    x = () => {
       e.params.autoplay.pauseOnMouseEnter &&
-        (e.el.addEventListener('pointerenter', R),
-        e.el.addEventListener('pointerleave', q));
+        (e.el.addEventListener('pointerenter', I),
+        e.el.addEventListener('pointerleave', M));
     },
-    k = () => {
-      e.el.removeEventListener('pointerenter', R),
-        e.el.removeEventListener('pointerleave', q);
+    C = () => {
+      e.el.removeEventListener('pointerenter', I),
+        e.el.removeEventListener('pointerleave', M);
     },
     z = () => {
-      O().addEventListener('visibilitychange', P);
+      D().addEventListener('visibilitychange', A);
     },
     _ = () => {
-      O().removeEventListener('visibilitychange', P);
+      D().removeEventListener('visibilitychange', A);
     };
-  r('init', () => {
-    e.params.autoplay.enabled && (N(), z(), (y = new Date().getTime()), B());
+  u('init', () => {
+    e.params.autoplay.enabled && (x(), z(), (c = new Date().getTime()), q());
   }),
-    r('destroy', () => {
-      k(), _(), e.autoplay.running && o();
+    u('destroy', () => {
+      C(), _(), e.autoplay.running && S();
     }),
-    r('beforeTransitionStart', (n, g, f) => {
+    u('beforeTransitionStart', (t, l, n) => {
       e.destroyed ||
         !e.autoplay.running ||
-        (f || !e.params.autoplay.disableOnInteraction ? l(!0, !0) : o());
+        (n || !e.params.autoplay.disableOnInteraction ? f(!0, !0) : S());
     }),
-    r('sliderFirstMove', () => {
+    u('sliderFirstMove', () => {
       if (!(e.destroyed || !e.autoplay.running)) {
         if (e.params.autoplay.disableOnInteraction) {
-          o();
+          S();
           return;
         }
-        (d = !0),
-          (E = !1),
-          (v = !1),
-          (I = setTimeout(() => {
-            (v = !0), (E = !0), l(!0);
+        (v = !0),
+          (y = !1),
+          (r = !1),
+          (O = setTimeout(() => {
+            (r = !0), (y = !0), f(!0);
           }, 200));
       }
     }),
-    r('touchEnd', () => {
-      if (!(e.destroyed || !e.autoplay.running || !d)) {
+    u('touchEnd', () => {
+      if (!(e.destroyed || !e.autoplay.running || !v)) {
         if (
-          (clearTimeout(I),
-          clearTimeout(S),
+          (clearTimeout(O),
+          clearTimeout(d),
           e.params.autoplay.disableOnInteraction)
         ) {
-          (E = !1), (d = !1);
+          (y = !1), (v = !1);
           return;
         }
-        E && e.params.cssMode && h(), (E = !1), (d = !1);
+        y && e.params.cssMode && s(), (y = !1), (v = !1);
       }
     }),
-    r('slideChange', () => {
-      e.destroyed || !e.autoplay.running || (m = !0);
+    u('slideChange', () => {
+      e.destroyed || !e.autoplay.running || (h = !0);
     }),
-    Object.assign(e.autoplay, { start: B, stop: o, pause: l, resume: h });
+    Object.assign(e.autoplay, { start: q, stop: S, pause: f, resume: s });
 }
-function H({ swiper: e, extendParams: L, emit: r, once: u }) {
-  L({
-    freeMode: {
-      enabled: !1,
-      momentum: !0,
-      momentumRatio: 1,
-      momentumBounce: !0,
-      momentumBounceRatio: 1,
-      momentumVelocityRatio: 1,
-      sticky: !1,
-      minimumVelocity: 0.02
-    }
+const R = document.querySelector('.logo-scroll'),
+  G = R.querySelectorAll('.swiper');
+G.forEach((e) => {
+  new F(e, {
+    modules: [k],
+    loop: !0,
+    loopedSlides: 14,
+    slidesPerView: 'auto',
+    speed: 2e3,
+    allowTouchMove: !1,
+    autoplay: { delay: 0, disableOnInteraction: !1 }
   });
-  function M() {
-    if (e.params.cssMode) return;
-    const s = e.getTranslate();
-    e.setTranslate(s),
-      e.setTransition(0),
-      (e.touchEventsData.velocities.length = 0),
-      e.freeMode.onTouchEnd({ currentPos: e.rtl ? e.translate : -e.translate });
-  }
-  function S() {
-    if (e.params.cssMode) return;
-    const { touchEventsData: s, touches: t } = e;
-    s.velocities.length === 0 &&
-      s.velocities.push({
-        position: t[e.isHorizontal() ? 'startX' : 'startY'],
-        time: s.touchStartTime
-      }),
-      s.velocities.push({
-        position: t[e.isHorizontal() ? 'currentX' : 'currentY'],
-        time: V()
-      });
-  }
-  function x({ currentPos: s }) {
-    if (e.params.cssMode) return;
-    const {
-        params: t,
-        wrapperEl: i,
-        rtlTranslate: y,
-        snapGrid: c,
-        touchEventsData: d
-      } = e,
-      I = V() - d.touchStartTime;
-    if (s < -e.minTranslate()) {
-      e.slideTo(e.activeIndex);
-      return;
-    }
-    if (s > -e.maxTranslate()) {
-      e.slides.length < c.length
-        ? e.slideTo(c.length - 1)
-        : e.slideTo(e.slides.length - 1);
-      return;
-    }
-    if (t.freeMode.momentum) {
-      if (d.velocities.length > 1) {
-        const o = d.velocities.pop(),
-          l = d.velocities.pop(),
-          h = o.position - l.position,
-          P = o.time - l.time;
-        (e.velocity = h / P),
-          (e.velocity /= 2),
-          Math.abs(e.velocity) < t.freeMode.minimumVelocity && (e.velocity = 0),
-          (P > 150 || V() - o.time > 300) && (e.velocity = 0);
-      } else e.velocity = 0;
-      (e.velocity *= t.freeMode.momentumVelocityRatio),
-        (d.velocities.length = 0);
-      let m = 1e3 * t.freeMode.momentumRatio;
-      const v = e.velocity * m;
-      let a = e.translate + v;
-      y && (a = -a);
-      let b = !1,
-        D;
-      const T = Math.abs(e.velocity) * 20 * t.freeMode.momentumBounceRatio;
-      let B;
-      if (a < e.maxTranslate())
-        t.freeMode.momentumBounce
-          ? (a + e.maxTranslate() < -T && (a = e.maxTranslate() - T),
-            (D = e.maxTranslate()),
-            (b = !0),
-            (d.allowMomentumBounce = !0))
-          : (a = e.maxTranslate()),
-          t.loop && t.centeredSlides && (B = !0);
-      else if (a > e.minTranslate())
-        t.freeMode.momentumBounce
-          ? (a - e.minTranslate() > T && (a = e.minTranslate() + T),
-            (D = e.minTranslate()),
-            (b = !0),
-            (d.allowMomentumBounce = !0))
-          : (a = e.minTranslate()),
-          t.loop && t.centeredSlides && (B = !0);
-      else if (t.freeMode.sticky) {
-        let o;
-        for (let l = 0; l < c.length; l += 1)
-          if (c[l] > -a) {
-            o = l;
-            break;
-          }
-        Math.abs(c[o] - a) < Math.abs(c[o - 1] - a) ||
-        e.swipeDirection === 'next'
-          ? (a = c[o])
-          : (a = c[o - 1]),
-          (a = -a);
-      }
-      if (
-        (B &&
-          u('transitionEnd', () => {
-            e.loopFix();
-          }),
-        e.velocity !== 0)
-      ) {
-        if (
-          (y
-            ? (m = Math.abs((-a - e.translate) / e.velocity))
-            : (m = Math.abs((a - e.translate) / e.velocity)),
-          t.freeMode.sticky)
-        ) {
-          const o = Math.abs((y ? -a : a) - e.translate),
-            l = e.slidesSizesGrid[e.activeIndex];
-          o < l
-            ? (m = t.speed)
-            : o < 2 * l
-            ? (m = t.speed * 1.5)
-            : (m = t.speed * 2.5);
-        }
-      } else if (t.freeMode.sticky) {
-        e.slideToClosest();
-        return;
-      }
-      t.freeMode.momentumBounce && b
-        ? (e.updateProgress(D),
-          e.setTransition(m),
-          e.setTranslate(a),
-          e.transitionStart(!0, e.swipeDirection),
-          (e.animating = !0),
-          A(i, () => {
-            !e ||
-              e.destroyed ||
-              !d.allowMomentumBounce ||
-              (r('momentumBounce'),
-              e.setTransition(t.speed),
-              setTimeout(() => {
-                e.setTranslate(D),
-                  A(i, () => {
-                    !e || e.destroyed || e.transitionEnd();
-                  });
-              }, 0));
-          }))
-        : e.velocity
-        ? (r('_freeModeNoMomentumRelease'),
-          e.updateProgress(a),
-          e.setTransition(m),
-          e.setTranslate(a),
-          e.transitionStart(!0, e.swipeDirection),
-          e.animating ||
-            ((e.animating = !0),
-            A(i, () => {
-              !e || e.destroyed || e.transitionEnd();
-            })))
-        : e.updateProgress(a),
-        e.updateActiveIndex(),
-        e.updateSlidesClasses();
-    } else if (t.freeMode.sticky) {
-      e.slideToClosest();
-      return;
-    } else t.freeMode && r('_freeModeNoMomentumRelease');
-    (!t.freeMode.momentum || I >= t.longSwipesMs) &&
-      (e.updateProgress(), e.updateActiveIndex(), e.updateSlidesClasses());
-  }
-  Object.assign(e, {
-    freeMode: { onTouchStart: M, onTouchMove: S, onTouchEnd: x }
-  });
-}
-const X = document.querySelector('.logo-scroll'),
-  Y = X.querySelector('.swiper');
-new F(Y, {
-  modules: [G, H],
-  loop: !0,
-  loopedSlides: 16,
-  slidesPerView: 'auto',
-  speed: 2e3,
-  allowTouchMove: !1,
-  autoplay: { delay: 0, disableOnInteraction: !1 },
-  freeMode: { enabled: !0, momentum: !1 }
 });
 document.addEventListener('alpine:initialized', () => {
   const e = document.querySelector('[data-case-slider]'),
-    L = e.querySelector('.swiper-button-prev'),
-    r = e.querySelector('.swiper-button-next');
+    T = e.querySelector('.swiper-button-prev'),
+    u = e.querySelector('.swiper-button-next');
   new F(e, {
     modules: [j],
     loop: !0,
     slidesPerView: 2,
-    navigation: { prevEl: L, nextEl: r },
+    navigation: { prevEl: T, nextEl: u },
     breakpoints: {
       760: { centeredSlides: !0, centeredSlidesBounds: !0, slidesPerView: 2 },
       1020: { centeredSlides: !0, centeredSlidesBounds: !0, slidesPerView: 4 },
@@ -405,11 +227,11 @@ document.addEventListener('alpine:initialized', () => {
       1600: { centeredSlides: !0, centeredSlidesBounds: !0, slidesPerView: 8 }
     },
     on: {
-      init: function (u) {
-        u.update();
+      init: function (a) {
+        a.update();
       },
-      resize: function (u) {
-        u.update();
+      resize: function (a) {
+        a.update();
       }
     }
   });

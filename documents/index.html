@@ -34,8 +34,8 @@
 
 <body>
 
-  <header class="bg-white sticky top-0 left-0 z-50 w-full py-4 shadow" x-data="{showmenu: false}">
-    <div class="flex items-center justify-between px-5 gap-6">
+  <header class="bg-white sticky top-0 left-0 z-50 w-full py-4 shadow lg:py-2" x-data="{showmenu: false}">
+    <div class="flex items-center justify-between px-5 gap-6 lg:min-h-[76px]">
       <a href="/">
         <img class="w-[190px] xl:w-[254px]" src="/assets/img/common/com_logo01.png" alt="紙・合成紙のユポ・コーポレーション">
       </a>
@@ -46,7 +46,7 @@
     <section class="bg-white py-10 md:py-20">
       <div class="w-full max-w-[1040px] mx-auto px-5">
         <div class="w-full max-w-[800px] mx-auto">
-          <form action="/documents/complete" method="POST" x-data="{condition: 'お問い合わせ'}">
+          <form action="/documents/complete/" method="POST" x-data="{condition: 'お問い合わせ'}">
             <div class="space-y-10 md:space-y-20">
               <header class="text-center space-y-6">
                 <h1 class="font-bold text-[32px] lg:text-4xl">資料ダウンロード</h1>
@@ -62,7 +62,7 @@
                   </label>
                   <div class="space-y-1 relative flex-auto">
                     <input class="border rounded-none block w-full p-3 flex-auto  placeholder:text-[#C0C0C0]"
-                      type="text" name="name" placeholder="例：ゆぽ 太朗" required>
+                      type="text" name="name" placeholder="例：ゆぽ 太朗">
 
 
 
@@ -80,7 +80,7 @@
                   </label>
                   <div class="space-y-1 relative flex-auto">
                     <input class="border rounded-none block w-full p-3 flex-auto  placeholder:text-[#C0C0C0]"
-                      type="text" name="corporate" placeholder="例：株式会社ユポ・コーポレーション" required>
+                      type="text" name="corporate" placeholder="例：株式会社ユポ・コーポレーション">
 
 
 
@@ -116,7 +116,7 @@
                   </label>
                   <div class="space-y-1 relative flex-auto">
                     <input class="border rounded-none block w-full p-3 flex-auto  placeholder:text-[#C0C0C0]" type="tel"
-                      name="phone" placeholder="例：03-5281-0811" required>
+                      name="phone" placeholder="例：03-5281-0811">
 
 
 
@@ -134,7 +134,7 @@
                   </label>
                   <div class="space-y-1 relative flex-auto">
                     <input class="border rounded-none block w-full p-3 flex-auto  placeholder:text-[#C0C0C0]"
-                      type="email" name="email" placeholder="例：yupo.katsuo@XX.yupo.jp" required>
+                      type="email" name="email" placeholder="例：yupo.katsuo@XX.yupo.jp">
 
 
 
@@ -157,7 +157,7 @@
                     <label class="inline-flex items-center gap-2 cursor-pointer font-medium">
                       <input
                         class="appearance-none w-6 h-6 rounded border border-black bg-white bg-no-repeat bg-center checked:bg-[url('/assets/img/common/checkbox-checked.svg')]"
-                        type="checkbox" name="personal-information" required checked="true">
+                        type="checkbox" name="personal-information">
                       <span>同意する</span>
                     </label>
                   </div>
@@ -185,17 +185,6 @@
 
                 </button>
               </div>
-
-              <div class="pt-10 text-[10px] text-[#656565]">
-                <ul class="flex justify-center gap-6 [&_a]:underline [&_a:hover]:opacity-50 md:justify-end">
-                  <li>
-                    <a href="https://japan.yupo.com/privacypolicy.html" target="_blank">プライバシーポリシー</a>
-                  </li>
-                  <li>
-                    <a href="https://japan.yupo.com/sitepolicy.html" target="_blank">情報セキュリティ基本方針</a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </form>
         </div>
@@ -203,7 +192,26 @@
     </section>
 
   </main>
+  <footer class="bg-white py-6">
+    <div class="w-full max-w-[1040px] mx-auto px-5">
+      <div class="w-full max-w-[800px] mx-auto space-y-4">
+        <div class="text-[10px] text-[#656565]">
+          <ul class="flex justify-center gap-6 [&_a]:underline [&_a:hover]:opacity-50 md:justify-end">
+            <li>
+              <a href="https://japan.yupo.com/privacypolicy.html" target="_blank">プライバシーポリシー</a>
+            </li>
+            <li>
+              <a href="https://japan.yupo.com/sitepolicy.html" target="_blank">情報セキュリティ基本方針</a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="text-center w-full text-[10px] font-thin tracking-wider md:text-right">
+          &copy; YUPO CORPORATIONh All Right Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
