@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth scroll-p-20 md:scroll-p-32">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f47e26">
+  <meta name="msapplication-TileColor" content="#ff0000">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>お知らせ | ユポ・コーポレーション | サステナブルな選択肢「ユポ」</title>
+  <meta name="description" content="ユポ・コーポレーションからの最新情報やお知らせをご覧いただけます">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="お知らせ | ユポ・コーポレーション | サステナブルな選択肢「ユポ」">
+  <meta property="og:description" content="ユポ・コーポレーションからの最新情報やお知らせをご覧いただけます">
+  <meta property="og:image" content="/ogp.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/common/style.css" />
+  <script type="module">window.addEventListener("load", () => { const e = document.querySelector(".tab-active"); e && e.scrollIntoView({ block: "center", inline: "center" }) });
+  </script>
+  <script type="module" src="/assets/js/common/script.js"></script>
+</head>
+
+<body>
+
+  <header class="bg-white sticky top-0 left-0 z-50 w-full py-4 shadow lg:py-2" x-data="{showmenu: false}">
+    <div class="flex items-center justify-between px-5 gap-6">
+      <a href="/">
+        <img class="w-[190px] xl:w-[254px]" src="/assets/img/common/com_logo01.png" alt="紙・合成紙のユポ・コーポレーション">
+      </a>
+
+      <a class="relative w-6 h-6 block group lg:hidden" href="#" x-on:click.prevent="showmenu = ! showmenu"
+        x-bind:class="{'active': showmenu}">
+        <span
+          class="bg-black rounded-full w-6 h-0.5 absolute left-0 top-1.5 -translate-y-1/2 group-[.active]:top-1/2 group-[.active]:rotate-[30deg] transition-all duration-200 ease-in-out group-[.active]:[transition:top_0.2s_ease-in-out,transform_0.2s_ease-in-out_0.2s]"></span>
+        <span
+          class="bg-black rounded-full w-6 h-0.5 absolute left-0 top-1/2 -translate-y-1/2 group-[.active]:scale-x-0 transition-transform duration-200 ease-in-out"></span>
+        <span
+          class="bg-black rounded-full w-6 h-0.5 absolute left-0 top-[18px] -translate-y-1/2 group-[.active]:top-1/2 group-[.active]:-rotate-[30deg] transition-all duration-200 ease-in-out group-[.active]:[transition:top_0.2s_ease-in-out,transform_0.2s_ease-in-out_0.2s]"></span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="max-lg:hidden flex-auto max-w-[860px]">
+        <div class="absolute right-0 top-0 bg-[#EFF1F1] rounded-bl-lg py-1.5 px-5">
+          <ul class="text-xs flex gap-6">
+            <li>
+              <a class="hover:opacity-50" href="/sustainability/">ブランドオーナーさまへ</a>
+            </li>
+            <li>
+              <a class="hover:opacity-50" href="/partner/">印刷会社／広告代理店さまへ</a>
+            </li>
+            <li>
+              <a class="hover:opacity-50" href="/release/">お知らせ・コラム</a>
+            </li>
+            <li>
+              <a class="hover:opacity-50" href="/faq/">よくある質問</a>
+            </li>
+            <li>
+              <a class="inline-flex gap-1 hover:opacity-50" href="tel:0352810815">
+                <img class="w-3 invert" src="/assets/img/common/icon-phone.svg" alt="icon-phone">
+                <span>03-5281-0815</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="pt-8">
+          <ul class="font-bold flex justify-end items-center gap-6 text-sm xl:gap-8">
+            <li class="group relative">
+              <a class="inline-flex gap-2 items-center hover:opacity-50" href="#">
+                <span>製品紹介</span>
+                <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
+              </a>
+              <ul class="hidden group-hover:block absolute left-0 top-full min-w-max pt-5 border-b">
+                <li>
+                  <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
+                    href="/environment/">
+                    <span>環境対応製品・サービス</span>
+                    <img class="flex-none" src="/assets/img/common/icon-link-arrow.svg" alt="Icon Menu Arrow" width="16"
+                      height="16">
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
+                    href="/package/">
+                    <span>パッケージ・ラベル</span>
+                    <img class="flex-none" src="/assets/img/common/icon-link-arrow.svg" alt="Icon Menu Arrow" width="16"
+                      height="16">
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
+                    href="/promotion/">
+                    <span>ポスター・店舗装飾等</span>
+                    <img class="flex-none" src="/assets/img/common/icon-link-arrow.svg" alt="Icon Menu Arrow" width="16"
+                      height="16">
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
+                    href="/industrial/">
+                    <span>機能材料・産業資材</span>
+                    <img class="flex-none" src="/assets/img/common/icon-link-arrow.svg" alt="Icon Menu Arrow" width="16"
+                      height="16">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="hover:opacity-50" href="/sustainability/">サステナビリティ</a>
+            </li>
+            <li>
+              <a class="hover:opacity-50" href="/feature/">特長</a>
+            </li>
+            <li class="group relative">
+              <a class="inline-flex gap-2 items-center hover:opacity-50" href="#">
+                <span>導入をご検討の方</span>
+                <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
+              </a>
+              <ul class="hidden group-hover:block absolute left-0 top-full min-w-max pt-5 border-b">
+                <li>
+                  <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
+                    href="/sustainability/">
+                    <span>ブランドオーナーさまへ</span>
+                    <img class="flex-none" src="/assets/img/common/icon-link-arrow.svg" alt="Icon Menu Arrow" width="16"
+                      height="16">
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
+                    href="/partner/">
+                    <span>印刷会社／広告代理店さまへ</span>
+                    <img class="flex-none" src="/assets/img/common/icon-link-arrow.svg" alt="Icon Menu Arrow" width="16"
+                      height="16">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="hover:opacity-50" href="/contact/">お問い合わせ</a>
+            </li>
+            <li>
+              <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 text-sm px-4"
+                href="/documents/">
+                <span>資料ダウンロード（無料）</span>
+
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="absolute top-full right-0 w-full flex flex-col h-[calc(100vh-65px)] overflow-auto overscroll-contain translate-y-full [&.active]:translate-y-0 transition-transform duration-300 ease-in-out lg:hidden"
+        x-bind:class="{'active': showmenu}">
+        <div class="p-8 bg-white flex-auto">
+          <nav>
+            <ul class="font-bold text-lg divide-y [&>li]:py-3 [&>li:first-child]:pt-0">
+              <li class="group">
+                <a class="inline-flex gap-2 items-center" href="#">
+                  <span>製品紹介</span>
+                  <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
+                </a>
+                <ul class="hidden font-normal space-y-3 pt-6 pb-3 group-hover:block">
+                  <li>
+                    <a class="hover:underline" href="/environment/">環境対応製品・サービス</a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="/package/">パッケージ・ラベル</a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="/promotion/">ポスター・店舗装飾等</a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="/industrial/">機能材料・産業資材</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/sustainability/">サステナビリティ</a>
+              </li>
+              <li>
+                <a href="/feature/">特長</a>
+              </li>
+              <li class="group">
+                <a class="inline-flex gap-2 items-center" href="#">
+                  <span>導入をご検討の方</span>
+                  <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
+                </a>
+                <ul class="hidden font-normal space-y-3 pt-6 pb-3 group-hover:block">
+                  <li>
+                    <a class="hover:underline" href="/sustainability/">ブランドオーナーさまへ</a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="/partner/">印刷会社／広告代理店さまへ</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/contact/">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="border-t pt-8 text-center">
+            <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12"
+              href="/documents/">
+              <span>資料ダウンロード（無料）</span>
+              <span>
+                <img src="/assets/img/common/icon-download.svg" alt="icon">
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-8 bg-[#EFF1F1] flex-auto h-full space-y-6">
+          <ul class="[&>li]:py-1.5 [&>li:first-child]:pt-0">
+            <li>
+              <a href="/sustainability/">ブランドオーナーさまへ</a>
+            </li>
+            <li>
+              <a href="/partner/">印刷会社／広告代理店さまへ</a>
+            </li>
+            <li>
+              <a href="/release/">お知らせ・コラム</a>
+            </li>
+            <li>
+              <a href="/faq/">よくある質問</a>
+            </li>
+          </ul>
+          <div class="space-y-1.5">
+            <p>
+              <a class="inline-flex items-baseline gap-1" href="tel:0352810815">
+                <img class="w-6 invert" src="/assets/img/common/icon-phone.svg" alt="icon-phone">
+                <span class="font-medium text-3xl/none">03-5281-0815</span>
+              </a>
+            </p>
+            <p class="text-[8px]">
+              ※「ユポ」「YUPO」は(株)ユポ・コーポレーションの登録商標です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="site-content">
+
+    <!-- Page Banner -->
+    <div class="px-4 py-8 bg-gradient-to-br from-[#ECF7DB] to-[#D7EDDD] md:py-16">
+      <div class="text-center space-y-5 md:space-y-10">
+        <h2 class="font-bold text-[32px] lg:text-4xl">お知らせ・コラム</h2>
+        <p>ホットリンクのお知らせの一覧です。<br>ニュース、プレスリリース、セミナー情報を掲載しています。</p>
+        <div class="text-center w-full mx-auto max-md:max-w-[240px]">
+          <ul class="flex flex-wrap justify-center gap-4 md:inline-flex">
+            <li class="flex-auto md:flex-1">
+              <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12"
+                href="/documents/">
+                <span>無料で資料請求</span>
+                <span>
+                  <img src="/assets/img/common/icon-download.svg" alt="icon">
+                </span>
+              </a>
+            </li>
+            <li class="flex-auto md:flex-1">
+              <a class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] p-3 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12"
+                href="/contact/">
+                <span>まずはお問い合わせ</span>
+                <span>
+                  <img src="/assets/img/common/icon-mail.svg" alt="icon">
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-white py-10 md:py-20">
+      <div class="w-full max-w-[1040px] mx-auto px-5">
+        <div class="space-y-10 md:space-y-20">
+          <div class="space-y-5 md:space-y-10" x-data="{activeTab: 5}">
+            <div class="overflow-auto -mx-5 !my-0 py-1 [&::-webkit-scrollbar]:hidden md:hidden">
+              <ul class="inline-flex gap-1.5 text-sm px-5">
+                <li>
+                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]"
+                    href="/release/">すべて（102）</a>
+                </li>
+                <li>
+                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]"
+                    href="/release/news/">ニュース（12）</a>
+                </li>
+                <li>
+                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]"
+                    href="/release/event/">イベント（12）</a>
+                </li>
+                <li>
+                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]"
+                    href="/release/column/">コラム（12）</a>
+                </li>
+                <li>
+                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]"
+                    href="/release/product/">製品紹介（12）</a>
+                </li>
+                <li>
+                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E] active tab-active"
+                    href="/release/case/">採用事例（12）</a>
+                </li>
+                <li>
+                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]"
+                    href="/release/open_innovation/">オープンイノベーション研究（12）</a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="max-md:hidden flex flex-wrap justify-center gap-3 gap-x-6 text-sm [&_a.active]:font-bold !my-0">
+              <li>
+                <a href="/release/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
+                  <span class="block text-center translate-x-2">すべて（102）</span>
+                  <span
+                    class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
+                </a>
+              </li>
+              <li>
+                <a href="/release/news/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
+                  <span class="block text-center translate-x-2">ニュース（12）</span>
+                  <span
+                    class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
+                </a>
+              </li>
+              <li>
+                <a href="/release/event/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
+                  <span class="block text-center translate-x-2">イベント（12）</span>
+                  <span
+                    class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
+                </a>
+              </li>
+              <li>
+                <a href="/release/column/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
+                  <span class="block text-center translate-x-2">コラム（12）</span>
+                  <span
+                    class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
+                </a>
+              </li>
+              <li>
+                <a href="/release/product/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
+                  <span class="block text-center translate-x-2">製品紹介（12）</span>
+                  <span
+                    class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
+                </a>
+              </li>
+              <li>
+                <a href="/release/case/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black active">
+                  <span class="block text-center translate-x-2">採用事例（12）</span>
+                  <span
+                    class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
+                </a>
+              </li>
+              <li>
+                <a href="/release/open_innovation/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
+                  <span class="block text-center translate-x-2">オープンイノベーション研究（12）</span>
+                  <span
+                    class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="grid gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3">
+              <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[--bg-color] py-6" style="--bg-color:#E6EBE9">
+      <div class="w-full max-w-[1040px] mx-auto px-5">
+        <ul
+          class="text-xs flex flex-wrap gap-2 [&_a:hover]:opacity-50 [&>li]:flex [&>li]:gap-2 [&>li:not(:first-child):before]:content-['>']">
+          <li><a href="/">ホーム</a></li>
+
+          <li>
+            <span>お知らせ</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+  <section
+    class="bg-[#3E765E] bg-[url('/assets/img/common/bg-contact.jpg')] bg-no-repeat bg-cover bg-center text-white py-10 md:py-20">
+    <div class="w-full max-w-[1040px] mx-auto px-5">
+      <div class="space-y-10 md:space-y-20">
+        <header class="text-center space-y-6">
+          <h2 class="font-bold space-y-2 text-2xl md:text-3xl">
+            <span class="block">より具体的な費用・<br class="md:hidden">導入までの流れを知りたい</span>
+            <span
+              class="block text-base bg-gradient-to-br from-[#4AC071] to-[#3E765E] bg-clip-text tracking-wider font-roboto">Contact</span>
+          </h2>
+
+        </header>
+
+        <div class="flex flex-col items-center gap-6 lg:flex-row">
+          <a class="flex-1 w-full max-w-[480px] bg-white rounded-xl text-center text-black p-5 space-y-3 group hover:opacity-90 md:py-10 md:space-y-6"
+            href="/documents/">
+            <div class="space-y-3">
+              <div class="text-sm md:text-base">より詳しい情報を資料で確認・共有したい</div>
+              <h3 class="font-bold text-xl md:text-2xl">
+                <span class="inline-block">資料ダウンロード</span>
+              </h3>
+              <p class="text-xs text-[#656565] md:text-sm">私たちの特長、支援事例をまとめた会社紹介資料は<br>こちらからダウンロードできます。</p>
+            </div>
+            <div>
+              <span
+                class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] py-3 px-4 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12">
+                <span>ダウンロードする</span>
+                <span>
+                  <img src="/assets/img/common/icon-download.svg" alt="icon">
+                </span>
+              </span>
+            </div>
+          </a><a
+            class="flex-1 w-full max-w-[480px] bg-white rounded-xl text-center text-black p-5 space-y-3 group hover:opacity-90 md:py-10 md:space-y-6"
+            href="/contact/">
+            <div class="space-y-3">
+              <div class="text-sm md:text-base">まずは直接相談して色々聞きたい</div>
+              <h3 class="font-bold text-xl md:text-2xl">
+                <span class="inline-block">お問い合わせ</span>
+              </h3>
+              <p class="text-xs text-[#656565] md:text-sm">ご相談やお見積もり依頼は<br>こちらからお気軽にお問い合わせください。</p>
+            </div>
+            <div>
+              <span
+                class="group rounded-full text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full min-w-max max-w-[340px] py-3 px-4 bg-[#F26D3F] hover:bg-[#F39777] transition-colors duration-150 md:px-6 md:text-lg lg:px-12">
+                <span>今すぐ問い合わせる</span>
+                <span>
+                  <img src="/assets/img/common/icon-mail.svg" alt="icon">
+                </span>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-lg flex items-center justify-between gap-3 md:gap-6">
+            <span class="h-px bg-white w-full flex-1"></span>
+            <span class="font-bold">お電話でのお問い合わせ</span>
+            <span class="h-px bg-white w-full flex-1"></span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center gap-3 md:flex-row md:gap-6 text-center">
+            <a class="flex items-center gap-3 font-bold text-3xl tracking-wider hover:opacity-50 md:text-4xl"
+              href="tel:0352810815">
+              <img src="/assets/img/common/icon-phone.svg" alt="icon-phone">
+              <span>03-5281-0815</span>
+            </a>
+            <span class="block text-sm">受付時間 9:00-12:00 / 13:00-17:30（土日祝を除く）</span>
+          </div>
+          <div class="text-[8px] text-center md:text-[10px]">
+            ※「ユポ」「YUPO」は(株)ユポ・コーポレーションの登録商標です。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white py-6">
+    <div class="w-full max-w-[1040px] mx-auto px-5">
+      <div class="flex flex-col items-center flex-wrap gap-6 md:flex-row md:justify-between">
+        <a href="/">
+          <img class="w-[190px] xl:w-[254px]" src="/assets/img/common/com_logo01.png" alt="紙・合成紙のユポ・コーポレーション">
+        </a>
+
+        <ul
+          class="text-sm max-md:w-full max-md:max-w-[300px] max-md:mx-auto flex flex-wrap justify-center gap-x-4 gap-y-2 [&_a]:inline-flex [&_a]:items-center [&_a]:gap-2 [&_a:hover]:opacity-50">
+          <li>
+            <a href="https://japan.yupo.com/corporate/outline/" target="_blank">
+              <span>会社概要</span>
+              <img src="/assets/img/common/icon-external-link.svg" alt="icon-external-link" width="12" height="12">
+            </a>
+          </li>
+          <li>
+            <a href="https://japan.yupo.com/privacypolicy.html" target="_blank">
+              <span>プライバシーポリシー</span>
+              <img src="/assets/img/common/icon-external-link.svg" alt="icon-external-link" width="12" height="12">
+            </a>
+          </li>
+          <li>
+            <a href="https://japan.yupo.com/sitepolicy.html" target="_blank">
+              <span>サイトポリシー</span>
+              <img src="/assets/img/common/icon-external-link.svg" alt="icon-external-link" width="12" height="12">
+            </a>
+          </li>
+          <li>
+            <a href="https://japan.yupo.com/aisdownload/index.php" target="_blank">
+              <span>AISダウンロード</span>
+              <img src="/assets/img/common/icon-external-link.svg" alt="icon-external-link" width="12" height="12">
+            </a>
+          </li>
+        </ul>
+
+        <div class="text-center w-full text-[10px] font-thin tracking-wider md:text-right">
+          &copy; YUPO CORPORATIONh All Right Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

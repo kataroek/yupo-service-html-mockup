@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="scroll-p-20">
+<html lang="ja" class="scroll-smooth scroll-p-20 md:scroll-p-32">
 
 <head>
   <meta charset="UTF-8">
@@ -293,95 +293,90 @@
               <ul class="inline-flex gap-3 text-sm px-5">
                 <li>
                   <a class="inline-block whitespace-nowrap border-2 border-white bg-[#E6EBE9] rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E] [&.active]:bg-white"
-                    href="#tab-0" x-on:click.prevent="activeTab = 0"
-                    x-bind:class="{'active': activeTab === 0}">カテゴリ名</a>
+                    href="#tab-0" x-on:click="activeTab = 0" x-bind:class="{'active': activeTab === 0}">環境対応製品</a>
                 </li>
                 <li>
                   <a class="inline-block whitespace-nowrap border-2 border-white bg-[#E6EBE9] rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E] [&.active]:bg-white"
-                    href="#tab-1" x-on:click.prevent="activeTab = 1"
-                    x-bind:class="{'active': activeTab === 1}">カテゴリ名</a>
+                    href="#tab-1" x-on:click="activeTab = 1" x-bind:class="{'active': activeTab === 1}">パッケージ・ラベル</a>
                 </li>
                 <li>
                   <a class="inline-block whitespace-nowrap border-2 border-white bg-[#E6EBE9] rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E] [&.active]:bg-white"
-                    href="#tab-2" x-on:click.prevent="activeTab = 2"
-                    x-bind:class="{'active': activeTab === 2}">カテゴリ名</a>
+                    href="#tab-2" x-on:click="activeTab = 2" x-bind:class="{'active': activeTab === 2}">ポスター・POP等</a>
                 </li>
                 <li>
                   <a class="inline-block whitespace-nowrap border-2 border-white bg-[#E6EBE9] rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E] [&.active]:bg-white"
-                    href="#tab-3" x-on:click.prevent="activeTab = 3"
-                    x-bind:class="{'active': activeTab === 3}">カテゴリ名</a>
+                    href="#tab-3" x-on:click="activeTab = 3" x-bind:class="{'active': activeTab === 3}">機能材料・産業資材</a>
                 </li>
                 <li>
                   <a class="inline-block whitespace-nowrap border-2 border-white bg-[#E6EBE9] rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E] [&.active]:bg-white"
-                    href="#tab-4" x-on:click.prevent="activeTab = 4"
-                    x-bind:class="{'active': activeTab === 4}">カテゴリ名</a>
+                    href="#tab-4" x-on:click="activeTab = 4" x-bind:class="{'active': activeTab === 4}">ユポの特徴</a>
                 </li>
                 <li>
                   <a class="inline-block whitespace-nowrap border-2 border-white bg-[#E6EBE9] rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E] [&.active]:bg-white"
-                    href="#tab-5" x-on:click.prevent="activeTab = 5"
-                    x-bind:class="{'active': activeTab === 5}">カテゴリ名</a>
+                    href="#tab-5" x-on:click="activeTab = 5" x-bind:class="{'active': activeTab === 5}">サステナビリティ</a>
                 </li>
                 <li>
                   <a class="inline-block whitespace-nowrap border-2 border-white bg-[#E6EBE9] rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E] [&.active]:bg-white"
-                    href="#tab-6" x-on:click.prevent="activeTab = 6"
-                    x-bind:class="{'active': activeTab === 6}">カテゴリ名</a>
+                    href="#tab-6" x-on:click="activeTab = 6" x-bind:class="{'active': activeTab === 6}">印刷会社 /
+                    広告代理店さまへ</a>
                 </li>
               </ul>
             </div>
 
-            <ul class="max-md:hidden flex flex-wrap gap-3 text-sm [&_a.active]:font-bold !my-0 lg:gap-6 lg:text-base">
+            <ul
+              class="max-md:hidden flex flex-wrap gap-10 gap-y-5 text-sm [&_a.active]:font-bold !my-0 max-w-[720px] lg:text-base">
               <li>
-                <a class="group inline-block [&.active]:font-bold" href="#tab-0" x-on:click.prevent="activeTab = 0"
+                <a class="group inline-block [&.active]:font-bold" href="#faq-section-0" x-on:click="activeTab = 0"
                   x-bind:class="{'active': activeTab === 0}">
-                  <span class="block">カテゴリ名</span>
+                  <span class="block">環境対応製品</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="group inline-block [&.active]:font-bold" href="#tab-1" x-on:click.prevent="activeTab = 1"
+                <a class="group inline-block [&.active]:font-bold" href="#faq-section-1" x-on:click="activeTab = 1"
                   x-bind:class="{'active': activeTab === 1}">
-                  <span class="block">カテゴリ名</span>
+                  <span class="block">パッケージ・ラベル</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="group inline-block [&.active]:font-bold" href="#tab-2" x-on:click.prevent="activeTab = 2"
+                <a class="group inline-block [&.active]:font-bold" href="#faq-section-2" x-on:click="activeTab = 2"
                   x-bind:class="{'active': activeTab === 2}">
-                  <span class="block">カテゴリ名</span>
+                  <span class="block">ポスター・POP等</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="group inline-block [&.active]:font-bold" href="#tab-3" x-on:click.prevent="activeTab = 3"
+                <a class="group inline-block [&.active]:font-bold" href="#faq-section-3" x-on:click="activeTab = 3"
                   x-bind:class="{'active': activeTab === 3}">
-                  <span class="block">カテゴリ名</span>
+                  <span class="block">機能材料・産業資材</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="group inline-block [&.active]:font-bold" href="#tab-4" x-on:click.prevent="activeTab = 4"
+                <a class="group inline-block [&.active]:font-bold" href="#faq-section-4" x-on:click="activeTab = 4"
                   x-bind:class="{'active': activeTab === 4}">
-                  <span class="block">カテゴリ名</span>
+                  <span class="block">ユポの特徴</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="group inline-block [&.active]:font-bold" href="#tab-5" x-on:click.prevent="activeTab = 5"
+                <a class="group inline-block [&.active]:font-bold" href="#faq-section-5" x-on:click="activeTab = 5"
                   x-bind:class="{'active': activeTab === 5}">
-                  <span class="block">カテゴリ名</span>
+                  <span class="block">サステナビリティ</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="group inline-block [&.active]:font-bold" href="#tab-6" x-on:click.prevent="activeTab = 6"
+                <a class="group inline-block [&.active]:font-bold" href="#faq-section-6" x-on:click="activeTab = 6"
                   x-bind:class="{'active': activeTab === 6}">
-                  <span class="block">カテゴリ名</span>
+                  <span class="block">印刷会社 / 広告代理店さまへ</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
@@ -389,82 +384,9 @@
             </ul>
           </div>
 
-          <div class="space-y-10 md:space-y-20" x-show="activeTab === 0">
+          <div id="faq-section-0" class="space-y-10 md:space-y-20">
             <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
-              <div class="space-y-6">
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
+              <h2 class="font-bold">環境対応製品</h2>
               <div class="space-y-6">
                 <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
                   x-data="{active: false}" x-bind:class="{'active': active}">
@@ -537,82 +459,9 @@
               </div>
             </div>
           </div>
-          <div class="space-y-10 md:space-y-20" x-show="activeTab === 1">
+          <div id="faq-section-1" class="space-y-10 md:space-y-20">
             <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
-              <div class="space-y-6">
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
+              <h2 class="font-bold">パッケージ・ラベル</h2>
               <div class="space-y-6">
                 <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
                   x-data="{active: false}" x-bind:class="{'active': active}">
@@ -685,82 +534,9 @@
               </div>
             </div>
           </div>
-          <div class="space-y-10 md:space-y-20" x-show="activeTab === 2">
+          <div id="faq-section-2" class="space-y-10 md:space-y-20">
             <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
-              <div class="space-y-6">
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
+              <h2 class="font-bold">ポスター・POP等</h2>
               <div class="space-y-6">
                 <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
                   x-data="{active: false}" x-bind:class="{'active': active}">
@@ -833,82 +609,9 @@
               </div>
             </div>
           </div>
-          <div class="space-y-10 md:space-y-20" x-show="activeTab === 3">
+          <div id="faq-section-3" class="space-y-10 md:space-y-20">
             <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
-              <div class="space-y-6">
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
+              <h2 class="font-bold">機能材料・産業資材</h2>
               <div class="space-y-6">
                 <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
                   x-data="{active: false}" x-bind:class="{'active': active}">
@@ -981,82 +684,9 @@
               </div>
             </div>
           </div>
-          <div class="space-y-10 md:space-y-20" x-show="activeTab === 4">
+          <div id="faq-section-4" class="space-y-10 md:space-y-20">
             <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
-              <div class="space-y-6">
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
+              <h2 class="font-bold">ユポの特徴</h2>
               <div class="space-y-6">
                 <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
                   x-data="{active: false}" x-bind:class="{'active': active}">
@@ -1129,82 +759,9 @@
               </div>
             </div>
           </div>
-          <div class="space-y-10 md:space-y-20" x-show="activeTab === 5">
+          <div id="faq-section-5" class="space-y-10 md:space-y-20">
             <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
-              <div class="space-y-6">
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
+              <h2 class="font-bold">サステナビリティ</h2>
               <div class="space-y-6">
                 <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
                   x-data="{active: false}" x-bind:class="{'active': active}">
@@ -1277,82 +834,9 @@
               </div>
             </div>
           </div>
-          <div class="space-y-10 md:space-y-20" x-show="activeTab === 6">
+          <div id="faq-section-6" class="space-y-10 md:space-y-20">
             <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
-              <div class="space-y-6">
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-                <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
-                  x-data="{active: false}" x-bind:class="{'active': active}">
-                  <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
-                    x-on:click="active = !active">
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
-                    <span class="flex-auto">記事の文字数は？</span>
-                    <span
-                      class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
-                  </h4>
-                  <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
-                    <span
-                      class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                    <span
-                      class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-6">
-              <h2 class="font-bold">QAカテゴリ名</h2>
+              <h2 class="font-bold">印刷会社 / 広告代理店さまへ</h2>
               <div class="space-y-6">
                 <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
                   x-data="{active: false}" x-bind:class="{'active': active}">

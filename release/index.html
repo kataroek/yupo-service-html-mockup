@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="scroll-p-20">
+<html lang="ja" class="scroll-smooth scroll-p-20 md:scroll-p-32">
 
 <head>
   <meta charset="UTF-8">
@@ -28,10 +28,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/common/swiper.css" />
-  <link rel="stylesheet" href="/assets/css/common/swiper-grid.css" />
   <link rel="stylesheet" href="/assets/css/common/style.css" />
-  <script type="module" src="/assets/js/common/release-slider.js"></script>
+  <link rel="stylesheet" href="/assets/css/release/release.css" />
   <script type="module" src="/assets/js/common/script.js"></script>
 </head>
 
@@ -261,7 +259,7 @@
     <!-- Page Banner -->
     <div class="px-4 py-8 bg-gradient-to-br from-[#ECF7DB] to-[#D7EDDD] md:py-16">
       <div class="text-center space-y-5 md:space-y-10">
-        <h2 class="font-bold text-[32px] lg:text-4xl">お知らせ</h2>
+        <h2 class="font-bold text-[32px] lg:text-4xl">お知らせ・コラム</h2>
         <p>ホットリンクのお知らせの一覧です。<br>ニュース、プレスリリース、セミナー情報を掲載しています。</p>
         <div class="text-center w-full mx-auto max-md:max-w-[240px]">
           <ul class="flex flex-wrap justify-center gap-4 md:inline-flex">
@@ -291,94 +289,92 @@
     <section class="bg-white py-10 md:py-20">
       <div class="w-full max-w-[1040px] mx-auto px-5">
         <div class="space-y-10 md:space-y-20">
-          <div class="space-y-5 md:space-y-10"
-            x-data="{activeTab: 0, tabs: [{title: 'すべて',count: 102},{title: 'ニュース',count: 12},{title: 'セミナー/イベント',count: 12},{title: 'セミナー/オープンイノベーション研究',count: 12}]}">
+          <div class="space-y-5 md:space-y-10" x-data="{activeTab: 0}">
             <div class="overflow-auto -mx-5 !my-0 py-1 [&::-webkit-scrollbar]:hidden md:hidden">
               <ul class="inline-flex gap-1.5 text-sm px-5">
                 <li>
-                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E]"
-                    href="#" x-on:click.prevent="activeTab = 0" x-bind:class="{'active': activeTab === 0}">すべて（102）</a>
+                  <a href="/release/"
+                    class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E] active">すべて（102）</a>
                 </li>
                 <li>
-                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E]"
-                    href="#" x-on:click.prevent="activeTab = 1" x-bind:class="{'active': activeTab === 1}">ニュース（12）</a>
+                  <a href="/release/news/"
+                    class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]">ニュース（12）</a>
                 </li>
                 <li>
-                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E]"
-                    href="#" x-on:click.prevent="activeTab = 2" x-bind:class="{'active': activeTab === 2}">イベント（12）</a>
+                  <a href="/release/event/"
+                    class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]">イベント（12）</a>
                 </li>
                 <li>
-                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E]"
-                    href="#" x-on:click.prevent="activeTab = 3" x-bind:class="{'active': activeTab === 3}">コラム（12）</a>
+                  <a href="/release/column/"
+                    class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]">コラム（12）</a>
                 </li>
                 <li>
-                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E]"
-                    href="#" x-on:click.prevent="activeTab = 4" x-bind:class="{'active': activeTab === 4}">メディア（12）</a>
+                  <a href="/release/product/"
+                    class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]">製品紹介（12）</a>
                 </li>
                 <li>
-                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E]"
-                    href="#" x-on:click.prevent="activeTab = 5" x-bind:class="{'active': activeTab === 5}">採用事例（12）</a>
+                  <a href="/release/case/"
+                    class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]">採用事例（12）</a>
                 </li>
                 <li>
-                  <a class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&.active]:border-[#3E765E]"
-                    href="#" x-on:click.prevent="activeTab = 6"
-                    x-bind:class="{'active': activeTab === 6}">オープンイノベーション研究（12）</a>
+                  <a href="/release/open_innovation/"
+                    class="inline-block whitespace-nowrap border-2 border-white bg-white rounded-full text-center py-1.5 px-3 [&#38;.active]:border-[#3E765E]">オープンイノベーション研究（12）</a>
                 </li>
               </ul>
             </div>
 
-            <ul class="max-md:hidden flex flex-wrap justify-evenly gap-3 text-sm [&_a.active]:font-bold !my-0">
+            <ul class="max-md:hidden flex flex-wrap justify-center gap-3 gap-x-6 text-sm [&_a.active]:font-bold !my-0">
               <li>
-                <a class="inline-block space-y-0.5 group hover:text-black/50 [&.active]:text-black" href="#"
-                  x-on:click.prevent="activeTab = 0" x-bind:class="{'active': activeTab === 0}">
+                <a href="/release/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black active">
                   <span class="block text-center translate-x-2">すべて（102）</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="inline-block space-y-0.5 group hover:text-black/50 [&.active]:text-black" href="#"
-                  x-on:click.prevent="activeTab = 1" x-bind:class="{'active': activeTab === 1}">
+                <a href="/release/news/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
                   <span class="block text-center translate-x-2">ニュース（12）</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="inline-block space-y-0.5 group hover:text-black/50 [&.active]:text-black" href="#"
-                  x-on:click.prevent="activeTab = 2" x-bind:class="{'active': activeTab === 2}">
+                <a href="/release/event/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
                   <span class="block text-center translate-x-2">イベント（12）</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="inline-block space-y-0.5 group hover:text-black/50 [&.active]:text-black" href="#"
-                  x-on:click.prevent="activeTab = 3" x-bind:class="{'active': activeTab === 3}">
+                <a href="/release/column/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
                   <span class="block text-center translate-x-2">コラム（12）</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="inline-block space-y-0.5 group hover:text-black/50 [&.active]:text-black" href="#"
-                  x-on:click.prevent="activeTab = 4" x-bind:class="{'active': activeTab === 4}">
-                  <span class="block text-center translate-x-2">メディア（12）</span>
+                <a href="/release/product/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
+                  <span class="block text-center translate-x-2">製品紹介（12）</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="inline-block space-y-0.5 group hover:text-black/50 [&.active]:text-black" href="#"
-                  x-on:click.prevent="activeTab = 5" x-bind:class="{'active': activeTab === 5}">
+                <a href="/release/case/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
                   <span class="block text-center translate-x-2">採用事例（12）</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
                 </a>
               </li>
               <li>
-                <a class="inline-block space-y-0.5 group hover:text-black/50 [&.active]:text-black" href="#"
-                  x-on:click.prevent="activeTab = 6" x-bind:class="{'active': activeTab === 6}">
+                <a href="/release/open_innovation/"
+                  class="inline-block space-y-0.5 group hover:text-black/50 [&#38;.active]:text-black">
                   <span class="block text-center translate-x-2">オープンイノベーション研究（12）</span>
                   <span
                     class="block w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E] scale-x-0 transition-transform duration-200 ease-in-out group-[.active]:scale-x-100"></span>
@@ -386,2205 +382,208 @@
               </li>
             </ul>
 
-            <div x-data="{title: 'すべて'}" x-show="activeTab === 0">
-              <div class="swiper" data-release-pager>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
+            <div class="grid gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3">
+              <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
                 </div>
-                <div class="py-12 px-6 flex justify-center items-center gap-6">
-                  <button
-                    class="swiper-button-prev w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-prev.svg" alt="slide-prev">
-                  </button>
-                  <button
-                    class="swiper-button-next w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-next.svg" alt="slide-next">
-                  </button>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
                 </div>
-              </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a><a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
+                href="/release/view/">
+                <h3 class="font-medium">
+                  【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
+                </h3>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm text-[#656565]"> 2022.09.28</span>
+                  <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
+                </div>
+              </a>
             </div>
-            <div x-data="{title: 'ニュース'}" x-show="activeTab === 1">
-              <div class="swiper" data-release-pager>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="py-12 px-6 flex justify-center items-center gap-6">
-                  <button
-                    class="swiper-button-prev w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-prev.svg" alt="slide-prev">
-                  </button>
-                  <button
-                    class="swiper-button-next w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-next.svg" alt="slide-next">
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div x-data="{title: 'イベント'}" x-show="activeTab === 2">
-              <div class="swiper" data-release-pager>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="py-12 px-6 flex justify-center items-center gap-6">
-                  <button
-                    class="swiper-button-prev w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-prev.svg" alt="slide-prev">
-                  </button>
-                  <button
-                    class="swiper-button-next w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-next.svg" alt="slide-next">
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div x-data="{title: 'コラム'}" x-show="activeTab === 3">
-              <div class="swiper" data-release-pager>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="py-12 px-6 flex justify-center items-center gap-6">
-                  <button
-                    class="swiper-button-prev w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-prev.svg" alt="slide-prev">
-                  </button>
-                  <button
-                    class="swiper-button-next w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-next.svg" alt="slide-next">
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div x-data="{title: 'メディア'}" x-show="activeTab === 4">
-              <div class="swiper" data-release-pager>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="py-12 px-6 flex justify-center items-center gap-6">
-                  <button
-                    class="swiper-button-prev w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-prev.svg" alt="slide-prev">
-                  </button>
-                  <button
-                    class="swiper-button-next w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-next.svg" alt="slide-next">
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div x-data="{title: '採用事例'}" x-show="activeTab === 5">
-              <div class="swiper" data-release-pager>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="py-12 px-6 flex justify-center items-center gap-6">
-                  <button
-                    class="swiper-button-prev w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-prev.svg" alt="slide-prev">
-                  </button>
-                  <button
-                    class="swiper-button-next w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-next.svg" alt="slide-next">
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div x-data="{title: 'オープンイノベーション研究'}" x-show="activeTab === 6">
-              <div class="swiper" data-release-pager>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="bg-white border block border-[#E6EBE9] rounded-xl space-y-3 p-6 shadow-md hover:opacity-75"
-                      href="/release/news/">
-                      <h3 class="font-medium">
-                        【機能アップデート】AIアナリスト、これまでのナレッジを詰め込んだ“勝ちパターン”との比較による改善ポイントの...
-                      </h3>
-                      <div class="flex items-baseline justify-between">
-                        <span class="text-sm text-[#656565]"> 2022.09.28</span>
-                        <span class="text-xs bg-[#E6EBE9] inline-block py-1 px-2">プレスリリース</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="py-12 px-6 flex justify-center items-center gap-6">
-                  <button
-                    class="swiper-button-prev w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-prev.svg" alt="slide-prev">
-                  </button>
-                  <button
-                    class="swiper-button-next w-12 h-12 cursor-pointer hover:opacity-50 disabled:opacity-20 disabled:cursor-not-allowed">
-                    <img src="/assets/img/common/slide-next.svg" alt="slide-next">
-                  </button>
-                </div>
-              </div>
+
+            <div class="space-y-6 py-10">
+              <nav class="pagination">
+                <ul>
+                  <li>
+                    <a class="page page-arrow page-first disabled" href="#">
+                      <img src="/assets/img/common/page-arrow-first.svg" alt="page-first">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page page-arrow page-prev disabled" href="#">
+                      <img src="/assets/img/common/page-arrow-prev.svg" alt="page-prev">
+                    </a>
+                  </li>
+                  <li><span class="page page-current">1</span></li>
+                  <li><a class="page" href="#">2</a></li>
+                  <li><a class="page" href="#">3</a></li>
+                  <li><a class="page" href="#">4</a></li>
+                  <li><a class="page" href="#">5</a></li>
+                  <li>
+                    <a class="page page-arrow page-next" href="#">
+                      <img src="/assets/img/common/page-arrow-next.svg" alt="page-next">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page page-arrow page-last" href="#">
+                      <img src="/assets/img/common/page-arrow-last.svg" alt="page-next">
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="pagination">
+                <ul>
+                  <li>
+                    <a class="page page-arrow page-first" href="#">
+                      <img src="/assets/img/common/page-arrow-first.svg" alt="page-first">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page page-arrow page-prev" href="#">
+                      <img src="/assets/img/common/page-arrow-prev.svg" alt="page-prev">
+                    </a>
+                  </li>
+                  <li><a class="page" href="#">3</a></li>
+                  <li><a class="page" href="#">4</a></li>
+                  <li><span class="page page-current">5</span></li>
+                  <li><a class="page" href="#">6</a></li>
+                  <li><a class="page" href="#">7</a></li>
+                  <li>
+                    <a class="page page-arrow page-next" href="#">
+                      <img src="/assets/img/common/page-arrow-next.svg" alt="page-next">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page page-arrow page-last" href="#">
+                      <img src="/assets/img/common/page-arrow-last.svg" alt="page-next">
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="pagination">
+                <ul>
+                  <li>
+                    <a class="page page-arrow page-first" href="#">
+                      <img src="/assets/img/common/page-arrow-first.svg" alt="page-first">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page page-arrow page-prev" href="#">
+                      <img src="/assets/img/common/page-arrow-prev.svg" alt="page-prev">
+                    </a>
+                  </li>
+                  <li><a class="page" href="#">26</a></li>
+                  <li><a class="page" href="#">27</a></li>
+                  <li><a class="page" href="#">28</a></li>
+                  <li><a class="page" href="#">29</a></li>
+                  <li><span class="page page-current">30</span></li>
+                  <li>
+                    <a class="page page-arrow page-next disabled" href="#">
+                      <img src="/assets/img/common/page-arrow-next.svg" alt="page-next">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page page-arrow page-last disabled" href="#">
+                      <img src="/assets/img/common/page-arrow-last.svg" alt="page-next">
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="scroll-p-20">
+<html lang="ja" class="scroll-smooth scroll-p-20 md:scroll-p-32">
 
 <head>
   <meta charset="UTF-8">
@@ -28,10 +28,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/common/style.css" />
   <link rel="stylesheet" href="/assets/css/common/swiper.css" />
-  <link rel="stylesheet" href="/assets/css/common/swiper-grid.css" />
-  <script type="module" src="/assets/js/common/case-slider.js"></script>
+  <link rel="stylesheet" href="/assets/css/common/style.css" />
+  <script type="module" src="/assets/js/common/swiper.js"></script>
   <script type="module" src="/assets/js/common/script.js"></script>
 </head>
 
@@ -268,28 +267,28 @@
 
         <ul class="flex flex-wrap justify-center gap-3">
           <li class="space-y-1 w-20 md:space-y-3 md:w-36 lg:w-40">
-            <img class="object-cover aspect-square w-full rounded-lg" src="https://dummyimage.com/130x130.jpg"
-              alt="お風呂ポスター・選挙ポスター">
+            <img class="object-cover aspect-square w-full rounded-lg"
+              src="/assets/img/promotion/D_1_1_bath_senkyo_poster.jpg" alt="お風呂ポスター・選挙ポスター">
             <span class="block text-center text-[8px] tracking-tight md:text-[10px] lg:text-xs">お風呂ポスター・選挙ポスター</span>
           </li>
           <li class="space-y-1 w-20 md:space-y-3 md:w-36 lg:w-40">
-            <img class="object-cover aspect-square w-full rounded-lg" src="https://dummyimage.com/130x130.jpg"
+            <img class="object-cover aspect-square w-full rounded-lg" src="/assets/img/promotion/D_1_2 _card_pop.jpg"
               alt="カード・POP">
             <span class="block text-center text-[8px] tracking-tight md:text-[10px] lg:text-xs">カード・POP</span>
           </li>
           <li class="space-y-1 w-20 md:space-y-3 md:w-36 lg:w-40">
-            <img class="object-cover aspect-square w-full rounded-lg" src="https://dummyimage.com/130x130.jpg"
-              alt="屋外用ポスター">
+            <img class="object-cover aspect-square w-full rounded-lg"
+              src="/assets/img/promotion/D_1_3 _outdoor_poster.jpg" alt="屋外用ポスター">
             <span class="block text-center text-[8px] tracking-tight md:text-[10px] lg:text-xs">屋外用ポスター</span>
           </li>
           <li class="space-y-1 w-20 md:space-y-3 md:w-36 lg:w-40">
-            <img class="object-cover aspect-square w-full rounded-lg" src="https://dummyimage.com/130x130.jpg"
-              alt="地図（耐水・野外用）">
+            <img class="object-cover aspect-square w-full rounded-lg"
+              src="/assets/img/promotion/D_1_4 _map_ outdoor.jpg" alt="地図（耐水・野外用）">
             <span class="block text-center text-[8px] tracking-tight md:text-[10px] lg:text-xs">地図（耐水・野外用）</span>
           </li>
           <li class="space-y-1 w-20 md:space-y-3 md:w-36 lg:w-40">
-            <img class="object-cover aspect-square w-full rounded-lg" src="https://dummyimage.com/130x130.jpg"
-              alt="飲食店メニュー">
+            <img class="object-cover aspect-square w-full rounded-lg"
+              src="/assets/img/promotion/D_1_5 _restaurant_menu.jpg" alt="飲食店メニュー">
             <span class="block text-center text-[8px] tracking-tight md:text-[10px] lg:text-xs">飲食店メニュー</span>
           </li>
         </ul>
@@ -340,180 +339,56 @@
         </div>
       </div>
     </div>
-    <div class="logo-scroll py-2 space-y-2 md:py-4 md:space-y-4">
+    <div class="logo-scroll py-2 space-y-2 pointer-events-none select-none md:py-4 md:space-y-4">
       <div class="swiper">
         <div class="swiper-wrapper !ease-linear">
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="swiper">
-        <div class="swiper-wrapper !ease-linear">
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-8.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-9.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-10.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-11.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-12.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-13.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-14.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-1.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-2.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-3.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-4.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-5.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-6.jpg">
-          </div>
-          <div class="swiper-slide !w-[90px] md:!w-[180px]">
-            <img class="w-[75px] h-[40px] md:w-[150px] md:h-[80px] mx-auto" src="/assets/img/common/logo-7.jpg">
+          <div class="swiper-slide w-[530px] md:w-[1180px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/assets/img/common/scroll-logo-pc.jpg">
+              <img class="w-auto h-[80px] md:h-[180px]" src="/assets/img/common/scroll-logo-sp.jpg" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -533,7 +408,7 @@
           <div class="grid gap-10 md:grid-cols-3">
             <div class="space-y-6">
               <div class="relative">
-                <img class="w-full rounded-lg" src="https://dummyimage.com/300x180.jpg" alt="課題01">
+                <img class="w-full rounded-lg" src="/assets/img/promotion/D_2_1_kadai_01.jpg" alt="課題01">
                 <span
                   class=" absolute left-2 top-2 rounded-full bg-black text-white font-bold text-sm/none py-1 px-3">課題01</span>
               </div>
@@ -594,7 +469,7 @@
             </div>
             <div class="space-y-6">
               <div class="relative">
-                <img class="w-full rounded-lg" src="https://dummyimage.com/300x180.jpg" alt="課題02">
+                <img class="w-full rounded-lg" src="/assets/img/promotion/D_2_2_kadai_02.jpg" alt="課題02">
                 <span
                   class=" absolute left-2 top-2 rounded-full bg-black text-white font-bold text-sm/none py-1 px-3">課題02</span>
               </div>
@@ -655,7 +530,7 @@
             </div>
             <div class="space-y-6">
               <div class="relative">
-                <img class="w-full rounded-lg" src="https://dummyimage.com/300x180.jpg" alt="課題03">
+                <img class="w-full rounded-lg" src="/assets/img/promotion/D_2_3_kadai_03.jpg" alt="課題03">
                 <span
                   class=" absolute left-2 top-2 rounded-full bg-black text-white font-bold text-sm/none py-1 px-3">課題03</span>
               </div>
@@ -753,7 +628,7 @@
 
 
           <!-- Product Block Complex -->
-          <div class="space-y-10 md:space-y-20">
+          <div class="space-y-20">
             <div class="grid gap-10 md:grid-cols-2">
               <div class="space-y-6">
                 <h3 class="font-bold text-2xl/normal space-y-6 md:text-3xl/normal">
@@ -761,20 +636,28 @@
                     class="hidden font-bold text-sm/none text-white bg-gradient-to-br from-[#4AC071] to-[#3E765E] rounded-full py-1 px-3">課題01を解決！</span>
                   <span class="block">ユポは環境に<br>やさしい印刷メディアです</span>
                 </h3>
+
+                <div class="md:hidden">
+                  <img class="w-full rounded-lg" src="/assets/img/promotion/D_3_1_bath_senkyo_poster.jpg"
+                    alt="ユポは環境にやさしい印刷メディアです">
+                </div>
+
                 <div>
                   ユポは微細な空孔（ミクロボイド）を内部に形成させることにより、プラスチック使用量とCO<sub>2</sub>排出量を約45%削減<sup>※</sup>が可能です。高品質と環境配慮を両立する製品を手軽につくることができます。
                 </div>
                 <div class="text-[#737876] text-[10px]">※0.3mm厚のユポをPPシートと比較した場合（CO<sub>2</sub>排出量は原料工程）。当社調べ</div>
               </div>
-              <div>
-                <img class="w-full rounded-lg" src="https://dummyimage.com/490x440.jpg" alt="ユポは環境に<br>やさしい印刷メディアです">
+
+              <div class="max-md:hidden">
+                <img class="w-full rounded-lg" src="/assets/img/promotion/D_3_1_bath_senkyo_poster.jpg"
+                  alt="ユポは環境にやさしい印刷メディアです">
               </div>
             </div>
 
             <div class="grid gap-10">
               <div class="max-md:space-y-6 md:flex md:items-start md:gap-10">
-                <img class="flex-none w-full rounded-lg md:max-w-[300px]" src="https://dummyimage.com/300x180.jpg"
-                  alt="業界トップシェアを誇る安心のブランド">
+                <img class="flex-none w-full rounded-lg md:max-w-[300px]"
+                  src="/assets/img/promotion/D_4_1_no1_brand.jpg" alt="業界トップシェアを誇る安心のブランド">
                 <div class="space-y-3 md:space-y-6">
                   <h4 class="font-bold text-xl">業界トップシェアを誇る安心のブランド</h4>
                   <div class="w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E]"></div>
@@ -787,8 +670,8 @@
                 </div>
               </div>
               <div class="max-md:space-y-6 md:flex md:items-start md:gap-10">
-                <img class="flex-none w-full rounded-lg md:max-w-[300px]" src="https://dummyimage.com/300x180.jpg"
-                  alt="プラスチック使用量と焼却処分時のCO<sub>2</sub>排出量削減に貢献">
+                <img class="flex-none w-full rounded-lg md:max-w-[300px]"
+                  src="/assets/img/promotion/D_4_2_co2_reduce_sozai.jpg" alt="プラスチック使用量と焼却処分時のCO2排出量削減に貢献">
                 <div class="space-y-3 md:space-y-6">
                   <h4 class="font-bold text-xl">プラスチック使用量と焼却処分時のCO<sub>2</sub>排出量削減に貢献</h4>
                   <div class="w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E]"></div>
@@ -819,7 +702,7 @@
 
 
           <!-- Product Block Complex -->
-          <div class="space-y-10 md:space-y-20">
+          <div class="space-y-20">
             <div class="grid gap-10 md:grid-cols-2">
               <div class="space-y-6">
                 <h3 class="font-bold text-2xl/normal space-y-6 md:text-3xl/normal">
@@ -827,20 +710,28 @@
                     class="hidden font-bold text-sm/none text-white bg-gradient-to-br from-[#4AC071] to-[#3E765E] rounded-full py-1 px-3">課題01を解決！</span>
                   <span class="block">紙の特性とフィルムの特性を融合</span>
                 </h3>
+
+                <div class="md:hidden">
+                  <img class="w-full rounded-lg" src="/assets/img/promotion/D_5_1_kamifilm_yugo.jpg"
+                    alt="紙の特性とフィルムの特性を融合">
+                </div>
+
                 <div>
                   ユポは環境に配慮するだけではなく、印刷適性や筆記適性などの一般紙としての特性を付与しており、一般のプラスチックフィルムと比較し鮮明な印刷効果が得られます。また、大ロットから小ロットまで、ご要望の数量に応じた各種印刷方式にも幅広く対応していますので、案件に応じて適切なグレードを選択いただくことが可能です。
                 </div>
 
               </div>
-              <div>
-                <img class="w-full rounded-lg" src="https://dummyimage.com/490x440.jpg" alt="紙の特性とフィルムの特性を融合">
+
+              <div class="max-md:hidden">
+                <img class="w-full rounded-lg" src="/assets/img/promotion/D_5_1_kamifilm_yugo.jpg"
+                  alt="紙の特性とフィルムの特性を融合">
               </div>
             </div>
 
             <div class="grid gap-10">
               <div class="max-md:space-y-6 md:flex md:items-start md:gap-10">
-                <img class="flex-none w-full rounded-lg md:max-w-[300px]" src="https://dummyimage.com/300x180.jpg"
-                  alt="優れた耐水性、耐久性">
+                <img class="flex-none w-full rounded-lg md:max-w-[300px]"
+                  src="/assets/img/promotion/D_6_1_taisui_taikyu.jpg" alt="優れた耐水性、耐久性">
                 <div class="space-y-3 md:space-y-6">
                   <h4 class="font-bold text-xl">優れた耐水性、耐久性</h4>
                   <div class="w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E]"></div>
@@ -853,8 +744,8 @@
                 </div>
               </div>
               <div class="max-md:space-y-6 md:flex md:items-start md:gap-10">
-                <img class="flex-none w-full rounded-lg md:max-w-[300px]" src="https://dummyimage.com/300x180.jpg"
-                  alt="小ロット案件、筆記案件にも対応。<br>耐水PODメディアとしてコストダウンが可能です">
+                <img class="flex-none w-full rounded-lg md:max-w-[300px]"
+                  src="/assets/img/promotion/D_6_2_podmedia_down.jpg" alt="小ロット案件、筆記案件にも対応。耐水PODメディアとしてコストダウンが可能です">
                 <div class="space-y-3 md:space-y-6">
                   <h4 class="font-bold text-xl">小ロット案件、筆記案件にも対応。<br>耐水PODメディアとしてコストダウンが可能です</h4>
                   <div class="w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E]"></div>
@@ -884,7 +775,7 @@
 
 
           <!-- Product Block Complex -->
-          <div class="space-y-10 md:space-y-20">
+          <div class="space-y-20">
             <div class="grid gap-10 md:grid-cols-2">
               <div class="space-y-6">
                 <h3 class="font-bold text-2xl/normal space-y-6 md:text-3xl/normal">
@@ -892,21 +783,28 @@
                     class="hidden font-bold text-sm/none text-white bg-gradient-to-br from-[#4AC071] to-[#3E765E] rounded-full py-1 px-3">課題01を解決！</span>
                   <span class="block">より使いやすく。<br>充実のテクニカルサポート体制</span>
                 </h3>
+
+                <div class="md:hidden">
+                  <img class="w-full rounded-lg" src="/assets/img/promotion/D_7_print_support.jpg"
+                    alt="より使いやすく。充実のテクニカルサポート体制">
+                </div>
+
                 <div>
                   ポリプロピレンを主原料としながら、一般紙用インキをご使用いただけるグレードをラインアップの他、安心してお使いいただけますよう「テクニカルサポート」担当部門を設置しています。印刷、加工前のご質問、テスト印刷などお気軽にお問合せ下さい。専門の担当者がサポートさせていただきます。
                 </div>
 
               </div>
-              <div>
-                <img class="w-full rounded-lg" src="https://dummyimage.com/490x440.jpg"
-                  alt="より使いやすく。<br>充実のテクニカルサポート体制">
+
+              <div class="max-md:hidden">
+                <img class="w-full rounded-lg" src="/assets/img/promotion/D_7_print_support.jpg"
+                  alt="より使いやすく。充実のテクニカルサポート体制">
               </div>
             </div>
 
             <div class="grid gap-10">
               <div class="max-md:space-y-6 md:flex md:items-start md:gap-10">
-                <img class="flex-none w-full rounded-lg md:max-w-[300px]" src="https://dummyimage.com/300x180.jpg"
-                  alt="より刷りやすく">
+                <img class="flex-none w-full rounded-lg md:max-w-[300px]"
+                  src="/assets/img/promotion/D_8_1_suriyasui.jpg" alt="より刷りやすく">
                 <div class="space-y-3 md:space-y-6">
                   <h4 class="font-bold text-xl">より刷りやすく</h4>
                   <div class="w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E]"></div>
@@ -919,8 +817,8 @@
                 </div>
               </div>
               <div class="max-md:space-y-6 md:flex md:items-start md:gap-10">
-                <img class="flex-none w-full rounded-lg md:max-w-[300px]" src="https://dummyimage.com/300x180.jpg"
-                  alt="充実のテクニカルサポート">
+                <img class="flex-none w-full rounded-lg md:max-w-[300px]"
+                  src="/assets/img/promotion/D_8_1_technical_support.jpg" alt="充実のテクニカルサポート">
                 <div class="space-y-3 md:space-y-6">
                   <h4 class="font-bold text-xl">充実のテクニカルサポート</h4>
                   <div class="w-full h-0.5 bg-gradient-to-br from-[#4AC071] to-[#3E765E]"></div>
@@ -1470,8 +1368,8 @@
           </div>
 
           <div class="text-center md:pt-6">
-            <a href="/faq/"
-              class="group rounded-full relative text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full max-w-[420px] p-3 bg-[#3E765E] hover:bg-[#66A088] mx-auto shadow-xl transition-colors duration-150 md:text-lg">
+            <a class="group rounded-full relative text-center inline-flex items-center justify-center gap-3 text-white font-bold w-full max-w-[420px] p-3 bg-[#3E765E] hover:bg-[#66A088] mx-auto shadow-xl transition-colors duration-150 md:text-lg"
+              href="/faq/">
               <span>よくある質問一覧を見る</span>
               <svg class="fill-current absolute top-1/2 -translate-y-1/2 right-3 md:right-6" width="16" height="16"
                 viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
