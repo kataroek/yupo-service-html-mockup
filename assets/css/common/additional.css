@@ -1,0 +1,73 @@
+.intro-list > :not([hidden]) ~ :not([hidden]),
+.issue-list > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.intro-list li,
+.issue-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+.intro-list li:before,
+.issue-list li:before {
+  position: relative;
+  top: 0.25rem;
+  height: 1.25rem;
+  width: 1.5rem;
+  flex: none;
+  background-image: url(/assets/img/common/list-item-check.svg);
+  content: var(--tw-content);
+  background-repeat: no-repeat;
+}
+.simple-block__content > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.simple-block__content ul {
+  list-style-position: outside;
+}
+.simple-block__content ul li {
+  position: relative;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+.simple-block__content ul li:before {
+  position: absolute;
+  left: 0;
+  top: auto;
+  --tw-content: '・';
+  content: var(--tw-content);
+}
+.issue-list > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.issue-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+.issue-list li:before {
+  position: relative;
+  top: 0.25rem;
+  height: 1.25rem;
+  width: 1.5rem;
+  flex: none;
+  background-image: url(/assets/img/common/list-item-check.svg);
+  content: var(--tw-content);
+  background-repeat: no-repeat;
+}
+.highlight-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+.highlight-list *::marker {
+  color: #5ac04a;
+}
+.highlight-list::marker {
+  color: #5ac04a;
+}

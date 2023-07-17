@@ -85,6 +85,8 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
   font-size: 100%;
   font-weight: inherit;
   line-height: inherit;
@@ -158,6 +160,9 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+dialog {
   padding: 0;
 }
 textarea {
@@ -896,8 +901,8 @@ video {
 .h-\[40px\] {
   height: 40px;
 }
-.h-\[80px\] {
-  height: 80px;
+.h-\[90px\] {
+  height: 90px;
 }
 .h-\[calc\(100vh-65px\)\] {
   height: calc(100vh - 65px);
@@ -961,9 +966,6 @@ video {
 }
 .w-\[240px\] {
   width: 240px;
-}
-.w-\[530px\] {
-  width: 530px;
 }
 .w-\[75px\] {
   width: 75px;
@@ -1102,9 +1104,6 @@ video {
 }
 .scroll-p-20 {
   scroll-padding: 5rem;
-}
-.list-disc {
-  list-style-type: disc;
 }
 .appearance-none {
   -webkit-appearance: none;
@@ -1439,6 +1438,9 @@ video {
 .bg-\[url\(\'\/assets\/img\/common\/dropdown-arrow\.svg\'\)\] {
   background-image: url(/assets/img/common/dropdown-arrow.svg);
 }
+.bg-\[url\(\'\/assets\/img\/common\/icon-product-remove\.svg\'\)\] {
+  background-image: url(/assets/img/common/icon-product-remove.svg);
+}
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1474,6 +1476,9 @@ video {
 .to-\[--to-color\] {
   --tw-gradient-to: var(--to-color) var(--tw-gradient-to-position);
 }
+.bg-\[length\:auto_90px\] {
+  background-size: auto 90px;
+}
 .bg-contain {
   background-size: contain;
 }
@@ -1490,11 +1495,17 @@ video {
 .bg-center {
   background-position: center;
 }
+.bg-left-top {
+  background-position: left top;
+}
 .bg-top {
   background-position: top;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.bg-repeat-x {
+  background-repeat: repeat-x;
 }
 .fill-\[\#3E765E\] {
   fill: #3e765e;
@@ -1615,9 +1626,6 @@ video {
 }
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-.pl-6 {
-  padding-left: 1.5rem;
 }
 .pt-0 {
   padding-top: 0;
@@ -1879,15 +1887,12 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.\[animation\:bg-slider-sp_10s_linear_infinite\] {
+  animation: bg-slider-sp 10s linear infinite;
+}
 .\[clip-path\:inset\(1px\)\] {
   -webkit-clip-path: inset(1px);
   clip-path: inset(1px);
-}
-.marker\:text-\[\#5AC04A\] *::marker {
-  color: #5ac04a;
-}
-.marker\:text-\[\#5AC04A\]::marker {
-  color: #5ac04a;
 }
 .placeholder\:text-\[\#C0C0C0\]::-moz-placeholder {
   --tw-text-opacity: 1;
@@ -1896,6 +1901,22 @@ video {
 .placeholder\:text-\[\#C0C0C0\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(192 192 192 / var(--tw-text-opacity));
+}
+.before\:h-3:before {
+  content: var(--tw-content);
+  height: 0.75rem;
+}
+.before\:w-3:before {
+  content: var(--tw-content);
+  width: 0.75rem;
+}
+.before\:bg-\[url\(\'\/assets\/img\/common\/icon-option-popup\.svg\'\)\]:before {
+  content: var(--tw-content);
+  background-image: url(/assets/img/common/icon-option-popup.svg);
+}
+.before\:bg-no-repeat:before {
+  content: var(--tw-content);
+  background-repeat: no-repeat;
 }
 .checked\:bg-\[url\(\'\/assets\/img\/common\/checkbox-checked\.svg\'\)\]:checked {
   background-image: url(/assets/img/common/checkbox-checked.svg);
@@ -2326,9 +2347,6 @@ video {
   .md\:w-6\/12 {
     width: 50%;
   }
-  .md\:w-\[1180px\] {
-    width: 1180px;
-  }
   .md\:w-\[150px\] {
     width: 150px;
   }
@@ -2434,6 +2452,9 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+  .md\:bg-\[length\:auto_180px\] {
+    background-size: auto 180px;
   }
   .md\:bg-cover {
     background-size: cover;
@@ -2582,6 +2603,9 @@ video {
   }
   .md\:tracking-tighter {
     letter-spacing: -0.05em;
+  }
+  .md\:\[animation\:bg-slider-pc_15s_linear_infinite\] {
+    animation: bg-slider-pc 15s linear infinite;
   }
   .md\:even\:flex-row-reverse:nth-child(even) {
     flex-direction: row-reverse;
@@ -2940,10 +2964,6 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.\[\&_li\:\:marker\]\:content-\[\'・\'\] li::marker {
-  --tw-content: '・';
-  content: var(--tw-content);
-}
 .\[\&_small\]\:block small {
   display: block;
 }
@@ -2995,9 +3015,6 @@ video {
 .peer:checked ~ .peer-checked\:\[\&_svg\]\:block svg {
   display: block;
 }
-.\[\&_ul\]\:list-outside ul {
-  list-style-position: outside;
-}
 .\[\&_ul\]\:list-disc ul {
   list-style-type: disc;
 }
@@ -3005,9 +3022,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-.\[\&_ul\]\:pl-4 ul {
-  padding-left: 1rem;
 }
 .\[\&_ul\]\:pl-6 ul {
   padding-left: 1.5rem;

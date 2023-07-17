@@ -1,0 +1,16 @@
+@keyframes bg-slider-pc {
+  0% {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1190px 0;
+  }
+}
+@keyframes bg-slider-sp {
+  0% {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -595px 0;
+  }
+}
