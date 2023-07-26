@@ -1884,8 +1884,8 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.\[animation\:bg-slider-sp_10s_linear_infinite\] {
-  animation: bg-slider-sp 10s linear infinite;
+.\[animation\:bg-slider-sp_20s_linear_infinite\] {
+  animation: bg-slider-sp 20s linear infinite;
 }
 .\[clip-path\:inset\(1px\)\] {
   -webkit-clip-path: inset(1px);
@@ -2612,8 +2612,8 @@ video {
   .md\:tracking-tighter {
     letter-spacing: -0.05em;
   }
-  .md\:\[animation\:bg-slider-pc_15s_linear_infinite\] {
-    animation: bg-slider-pc 15s linear infinite;
+  .md\:\[animation\:bg-slider-pc_20s_linear_infinite\] {
+    animation: bg-slider-pc 20s linear infinite;
   }
   .md\:even\:flex-row-reverse:nth-child(even) {
     flex-direction: row-reverse;

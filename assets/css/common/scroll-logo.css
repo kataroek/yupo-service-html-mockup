@@ -3,7 +3,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: -1190px 0;
+    background-position: -2010px 0;
   }
 }
 @keyframes bg-slider-sp {
@@ -11,6 +11,6 @@
     background-position: 0 0;
   }
   to {
-    background-position: -595px 0;
+    background-position: -1005px 0;
   }
 }
