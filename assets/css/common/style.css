@@ -2361,6 +2361,9 @@ video {
   .md\:w-auto {
     width: auto;
   }
+  .md\:max-w-\[1000px\] {
+    max-width: 1000px;
+  }
   .md\:max-w-\[300px\] {
     max-width: 300px;
   }
