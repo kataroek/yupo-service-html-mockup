@@ -349,10 +349,10 @@ video {
 .prose :where(ol[type='a']):not(:where([class~='not-prose'] *)) {
   list-style-type: lower-alpha;
 }
-.prose :where(ol[type='A' s]):not(:where([class~='not-prose'] *)) {
+.prose :where(ol[type='A s']):not(:where([class~='not-prose'] *)) {
   list-style-type: upper-alpha;
 }
-.prose :where(ol[type='a' s]):not(:where([class~='not-prose'] *)) {
+.prose :where(ol[type='a s']):not(:where([class~='not-prose'] *)) {
   list-style-type: lower-alpha;
 }
 .prose :where(ol[type='I']):not(:where([class~='not-prose'] *)) {
@@ -361,10 +361,10 @@ video {
 .prose :where(ol[type='i']):not(:where([class~='not-prose'] *)) {
   list-style-type: lower-roman;
 }
-.prose :where(ol[type='I' s]):not(:where([class~='not-prose'] *)) {
+.prose :where(ol[type='I s']):not(:where([class~='not-prose'] *)) {
   list-style-type: upper-roman;
 }
-.prose :where(ol[type='i' s]):not(:where([class~='not-prose'] *)) {
+.prose :where(ol[type='i s']):not(:where([class~='not-prose'] *)) {
   list-style-type: lower-roman;
 }
 .prose :where(ol[type='1']):not(:where([class~='not-prose'] *)) {
@@ -1018,9 +1018,6 @@ video {
 }
 .max-w-\[800px\] {
   max-width: 800px;
-}
-.max-w-\[840px\] {
-  max-width: 840px;
 }
 .max-w-\[860px\] {
   max-width: 860px;
@@ -2236,6 +2233,11 @@ video {
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
+  .max-md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
   .max-md\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2361,6 +2363,9 @@ video {
   }
   .md\:max-w-\[300px\] {
     max-width: 300px;
+  }
+  .md\:max-w-\[60\%\] {
+    max-width: 60%;
   }
   .md\:max-w-none {
     max-width: none;
@@ -2543,6 +2548,9 @@ video {
   }
   .md\:pt-6 {
     padding-top: 1.5rem;
+  }
+  .md\:text-left {
+    text-align: left;
   }
   .md\:text-center {
     text-align: center;

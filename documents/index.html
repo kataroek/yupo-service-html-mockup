@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/common/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/common/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f47e26">
+  <link rel="mask-icon" href="/assets/img/common/safari-pinned-tab.svg" color="#f47e26">
   <meta name="msapplication-TileColor" content="#ff0000">
   <meta name="theme-color" content="#ffffff">
 
@@ -21,7 +21,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="資料ダウンロード | ユポ・コーポレーション | サステナブルな選択肢「ユポ」">
   <meta property="og:description" content="ユポ・コーポレーションの製品カタログや各種のお役立ち資料などをダウンロードすることができます">
-  <meta property="og:image" content="/ogp.jpg">
+  <meta property="og:image" content="/assets/img/common/ogp.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -193,7 +193,7 @@
                     <label class="inline-flex items-center gap-2 cursor-pointer font-medium">
                       <input
                         class="appearance-none w-6 h-6 rounded border border-black bg-white bg-no-repeat bg-center checked:bg-[url('/assets/img/common/checkbox-checked.svg')]"
-                        type="checkbox" name="recieve-update">
+                        type="checkbox" name="recieve-update" checked="true">
                       <span>同意する</span>
                     </label>
                   </div>
@@ -216,20 +216,24 @@
   </main>
   <footer class="bg-white py-6">
     <div class="w-full max-w-[1040px] mx-auto px-5">
-      <div class="w-full max-w-[800px] mx-auto space-y-4">
-        <div class="text-[10px] text-[#656565]">
-          <ul class="flex justify-center gap-6 [&_a]:underline [&_a:hover]:opacity-50 md:justify-end">
-            <li>
-              <a href="https://japan.yupo.com/privacypolicy.html" target="_blank">プライバシーポリシー</a>
-            </li>
-            <li>
-              <a href="https://japan.yupo.com/sitepolicy.html" target="_blank">情報セキュリティ基本方針</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="text-center w-full text-[10px] font-thin tracking-wider md:text-right">
-          &copy; YUPO CORPORATIONh All Right Reserved.
+      <div class="w-full max-w-[800px] mx-auto">
+        <div class="max-md:space-y-4 md:flex md:justify-between">
+          <div class="text-[10px] text-center text-[#656565] md:text-left md:max-w-[60%]"></div>
+          <div class="space-y-4">
+            <div class="text-[10px] text-[#656565]">
+              <ul class="flex justify-center gap-6 [&_a]:underline [&_a:hover]:opacity-50 md:justify-end">
+                <li>
+                  <a href="https://japan.yupo.com/privacypolicy.html" target="_blank">プライバシーポリシー</a>
+                </li>
+                <li>
+                  <a href="https://japan.yupo.com/trademark.html" target="_blank">商標について</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-center w-full text-[10px] font-thin tracking-wider md:text-right">
+              &copy;YUPO CORPORATION All Right Reserved.
+            </div>
+          </div>
         </div>
       </div>
     </div>
