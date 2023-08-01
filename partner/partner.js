@@ -1,4 +1,4 @@
-import { m as p } from '../common/module.esm.js';
+import { m as p } from '/assets/js/common/module.esm.js';
 p.data('productFilter', () => ({
   init() {
     this.getProducts(),
