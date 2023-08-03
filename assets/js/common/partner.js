@@ -1,4 +1,4 @@
-import { m as p } from '/assets/js/common/module.esm.js';
+import { m as p } from './module.esm.js';
 p.data('productFilter', () => ({
   init() {
     this.getProducts(),
@@ -30,7 +30,7 @@ p.data('productFilter', () => ({
   productsData: [],
   productsList: [],
   getProducts() {
-    fetch('/data/products-new.json')
+    fetch('/partner/products-new.json')
       .then((t) => t.json())
       .then((t) => {
         this.productsData = t;
