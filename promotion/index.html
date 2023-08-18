@@ -1169,9 +1169,9 @@
           </header>
 
           <div class="space-y-6">
-            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
-              x-bind:class="{'active': active}">
-              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+            <div class="faq-item group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8 active"
+              x-data="{active: false}" x-bind:class="{'active': active}">
+              <h4 class="faq-item__question font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
                 x-on:click="active = !active">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
@@ -1179,16 +1179,16 @@
                 <span
                   class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
               </h4>
-              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+              <div class="faq-item__answer flex items-baseline gap-4 pt-4" x-show="active" x-transition="" style="">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                <span
-                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
+                <div>この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確<a
+                    href="#">認するためのダミ</a>ー文章で、実際の文章ではありませんのでご了承ください。</div>
               </div>
             </div>
-            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
-              x-bind:class="{'active': active}">
-              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+            <div class="faq-item group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
+              x-data="{active: false}" x-bind:class="{'active': active}">
+              <h4 class="faq-item__question font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
                 x-on:click="active = !active">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
@@ -1196,16 +1196,17 @@
                 <span
                   class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
               </h4>
-              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+              <div class="faq-item__answer flex items-baseline gap-4 pt-4" x-show="active" x-transition=""
+                style="display: none;">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                <span
-                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
+                <div>この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、<a
+                    href="#">実際の文章ではあり</a>ませんのでご了承ください。</div>
               </div>
             </div>
-            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
-              x-bind:class="{'active': active}">
-              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+            <div class="faq-item group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
+              x-data="{active: false}" x-bind:class="{'active': active}">
+              <h4 class="faq-item__question font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
                 x-on:click="active = !active">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
@@ -1213,16 +1214,17 @@
                 <span
                   class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
               </h4>
-              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+              <div class="faq-item__answer flex items-baseline gap-4 pt-4" x-show="active" x-transition=""
+                style="display: none;">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                <span
-                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
+                <div>この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確<a
+                    href="#">認するためのダミ</a>ー文章で、実際の文章ではありませんのでご了承ください。</div>
               </div>
             </div>
-            <div class="group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8" x-data="{active: false}"
-              x-bind:class="{'active': active}">
-              <h4 class="font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
+            <div class="faq-item group bg-white border border-[#E6EBE9] rounded-lg p-3 md:py-4 md:px-8"
+              x-data="{active: false}" x-bind:class="{'active': active}">
+              <h4 class="faq-item__question font-bold flex items-baseline gap-4 cursor-pointer hover:text-[#3E765E]"
                 x-on:click="active = !active">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#E6EBE9] inline-flex items-center justify-center font-roboto">Q</span>
@@ -1230,11 +1232,12 @@
                 <span
                   class="flex-none w-0 h-0 border-[10px] border-b-0 border-t-[14px] border-transparent border-t-[#808080] group-[.active]:-scale-y-100 transition-transform duration-200 ease-in-out"></span>
               </h4>
-              <div class="flex items-baseline gap-4 pt-4" x-show="active" x-transition>
+              <div class="faq-item__answer flex items-baseline gap-4 pt-4" x-show="active" x-transition=""
+                style="display: none;">
                 <span
                   class="flex-none w-10 h-10 rounded-full bg-[#3E765E] text-white inline-flex items-center justify-center font-roboto font-bold">A</span>
-                <span
-                  class="block">この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、実際の文章ではありませんのでご了承ください。</span>
+                <div>この文章は文字の大きさ文字数などを確認するためのダミー文章です。実際のテキストではありません。この文章は文字の大きさ文字数などを確認するためのダミー文章で、<a
+                    href="#">実際の文章ではあり</a>ませんのでご了承ください。</div>
               </div>
             </div>
           </div>

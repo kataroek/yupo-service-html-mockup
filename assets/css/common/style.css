@@ -1802,6 +1802,10 @@ video {
 .tracking-wider {
   letter-spacing: 0.05em;
 }
+.text-\[\#00e\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 238 / var(--tw-text-opacity));
+}
 .text-\[\#3E765E\] {
   --tw-text-opacity: 1;
   color: rgb(62 118 94 / var(--tw-text-opacity));
@@ -3080,4 +3084,11 @@ video {
 }
 .\[\&_ul\]\:pl-6 ul {
   padding-left: 1.5rem;
+}
+.faq-item__answer > div a {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 238 / var(--tw-text-opacity));
+}
+.faq-item__answer > div a:hover {
+  opacity: 0.5;
 }
