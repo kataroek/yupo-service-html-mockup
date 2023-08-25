@@ -1303,6 +1303,9 @@ video {
 .whitespace-nowrap {
   white-space: nowrap;
 }
+.break-words {
+  overflow-wrap: break-word;
+}
 .break-all {
   word-break: break-all;
 }
@@ -3084,11 +3087,4 @@ video {
 }
 .\[\&_ul\]\:pl-6 ul {
   padding-left: 1.5rem;
-}
-.faq-item__answer > div a {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 238 / var(--tw-text-opacity));
-}
-.faq-item__answer > div a:hover {
-  opacity: 0.5;
 }
