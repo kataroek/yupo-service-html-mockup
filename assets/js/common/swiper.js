@@ -3181,7 +3181,7 @@ document.addEventListener('alpine:initialized', () => {
     slidesPerView: 'auto',
     spaceBetween: 20,
     navigation: { prevEl: e, nextEl: i },
-    breakpoints: { 760: { spaceBetween: 24, slidesPerGroup: 3 } },
+    breakpoints: { 760: { spaceBetween: 24, slidesPerGroup: 2 } },
     on: {
       init: function (s) {
         s.update();
