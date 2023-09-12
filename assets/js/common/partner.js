@@ -30,7 +30,7 @@ p.data('productFilter', () => ({
   productsData: [],
   productsList: [],
   getProducts() {
-    fetch('/partner/products-new.json')
+    fetch('/data/products-new.json')
       .then((t) => t.json())
       .then((t) => {
         this.productsData = t;

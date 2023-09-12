@@ -2922,6 +2922,9 @@ video {
   .lg\:w-40 {
     width: 10rem;
   }
+  .lg\:w-\[240px\] {
+    width: 240px;
+  }
   .lg\:w-\[250px\] {
     width: 250px;
   }

@@ -1,16 +1,1 @@
-@keyframes bg-slider-pc {
-  0% {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -2010px 0;
-  }
-}
-@keyframes bg-slider-sp {
-  0% {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -1005px 0;
-  }
-}
+@keyframes bg-slider-pc{0%{background-position:0 0}to{background-position:-2010px 0}}@keyframes bg-slider-sp{0%{background-position:0 0}to{background-position:-1005px 0}}
