@@ -102,10 +102,10 @@
         <nav class="pt-8">
           <ul class="font-bold flex justify-end items-center gap-6 text-sm xl:gap-8">
             <li class="group relative">
-              <a class="inline-flex gap-2 items-center hover:opacity-50" href="#">
+              <span class="inline-flex gap-2 items-center cursor-pointer hover:opacity-50">
                 <span>製品紹介</span>
                 <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
-              </a>
+              </span>
               <ul class="hidden group-hover:block absolute left-0 top-full min-w-max pt-5 border-b">
                 <li>
                   <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
@@ -148,10 +148,10 @@
               <a class="hover:opacity-50" href="/feature/">特徴</a>
             </li>
             <li class="group relative">
-              <a class="inline-flex gap-2 items-center hover:opacity-50" href="#">
+              <span class="inline-flex gap-2 items-center cursor-pointer hover:opacity-50">
                 <span>採用をご検討の方</span>
                 <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
-              </a>
+              </span>
               <ul class="hidden group-hover:block absolute left-0 top-full min-w-max pt-5 border-b">
                 <li>
                   <a class="flex gap-4 items-center justify-between p-4 bg-white hover:bg-[#E6EBE9] border-t border-x"
@@ -193,10 +193,10 @@
           <nav>
             <ul class="font-bold text-lg divide-y [&>li]:py-3 [&>li:first-child]:pt-0">
               <li class="group">
-                <a class="inline-flex gap-2 items-center" href="#">
+                <span class="inline-flex gap-2 items-center cursor-pointer">
                   <span>製品紹介</span>
                   <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
-                </a>
+                </span>
                 <ul class="hidden font-normal space-y-3 pt-6 pb-3 group-hover:block">
                   <li>
                     <a class="hover:underline" href="/environment/">環境対応製品・サービス</a>
@@ -219,10 +219,10 @@
                 <a href="/feature/">特徴</a>
               </li>
               <li class="group">
-                <a class="inline-flex gap-2 items-center" href="#">
+                <span class="inline-flex gap-2 items-center cursor-pointer">
                   <span>採用をご検討の方</span>
                   <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
-                </a>
+                </span>
                 <ul class="hidden font-normal space-y-3 pt-6 pb-3 group-hover:block">
                   <li>
                     <a class="hover:underline" href="/sustainability/">ブランドオーナーさまへ</a>
@@ -748,7 +748,7 @@
           <div class="max-md:hidden space-y-4">
             <div class="flex border rounded-xl overflow-hidden w-full text-sm lg:text-base">
               <!-- Option A -->
-              <div class="w-[220px] flex-none p-6 bg-white lg:w-[240px]">
+              <div class="w-[220px] flex-none p-6 bg-white lg:w-[210px] lg:p-4">
                 <ul class="space-y-1">
                   <li>
                     <label class="group inline-block cursor-pointer">
@@ -786,7 +786,7 @@
               </div>
 
               <!-- Option B -->
-              <div class="w-[220px] flex-none p-6 bg-[#E6EBE9] lg:w-[240px]">
+              <div class="w-[220px] flex-none p-6 bg-[#E6EBE9] lg:w-[240px] lg:p-4">
                 <ul class="space-y-1" x-cloak x-show="optionA === '油性オフセット'">
                   <li>
                     <label class="group inline-block cursor-pointer">
@@ -1015,7 +1015,7 @@
               </div>
 
               <!-- Products -->
-              <div class="w-screen flex-auto p-6 bg-white col-span-2">
+              <div class="w-screen flex-auto p-6 bg-white col-span-2 lg:p-4">
                 <div class="space-y-1" x-cloak x-show="optionA === '油性オフセット' &#38;&#38; optionB === '油性オフセット/環境対応製品'">
                   <ul class="space-y-1">
                     <li>
@@ -1281,6 +1281,7 @@
                       </label>
                     </li>
                   </ul>
+
 
                 </div>
                 <div class="space-y-1" x-cloak x-show="optionA === '油性オフセット' &#38;&#38; optionB === '油性オフセット/半透明品'">
@@ -2001,6 +2002,7 @@
                     </li>
                   </ul>
 
+
                 </div>
                 <div class="space-y-1" x-cloak x-show="optionA === 'UVオフセット' &#38;&#38; optionB === 'UVオフセット/半透明品'">
                   <ul class="space-y-1">
@@ -2544,6 +2546,7 @@
                     </li>
                   </ul>
 
+
                 </div>
                 <div class="space-y-1" x-cloak x-show="optionA === 'デジタル印刷' &#38;&#38; optionB === 'デジタル印刷/環境対応製品'">
                   <ul class="space-y-1">
@@ -2567,6 +2570,7 @@
                       </label>
                     </li>
                   </ul>
+
 
                 </div>
                 <div class="space-y-1" x-cloak x-show="optionA === 'デジタル印刷' &#38;&#38; optionB === 'デジタル印刷/一般品'">
@@ -2716,6 +2720,7 @@
                     </li>
                   </ul>
 
+
                 </div>
                 <div class="space-y-1" x-cloak x-show="optionA === 'デジタル印刷' &#38;&#38; optionB === 'デジタル印刷/ラベル用'">
                   <ul class="space-y-1">
@@ -2738,6 +2743,7 @@
                       </label>
                     </li>
                   </ul>
+
 
                 </div>
                 <div class="space-y-1" x-cloak x-show="optionA === 'デジタル印刷' &#38;&#38; optionB === 'デジタル印刷/吸着品'">

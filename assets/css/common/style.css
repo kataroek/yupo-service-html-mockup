@@ -2922,6 +2922,9 @@ video {
   .lg\:w-40 {
     width: 10rem;
   }
+  .lg\:w-\[210px\] {
+    width: 210px;
+  }
   .lg\:w-\[240px\] {
     width: 240px;
   }
@@ -2994,6 +2997,9 @@ video {
   }
   .lg\:p-20 {
     padding: 5rem;
+  }
+  .lg\:p-4 {
+    padding: 1rem;
   }
   .lg\:p-6 {
     padding: 1.5rem;
