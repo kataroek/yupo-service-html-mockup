@@ -3205,7 +3205,7 @@ ve.data('caseSlider', () => ({
     const t = this.$el.querySelector('.swiper');
     this.slider = new D(t, {
       modules: [Nt],
-      autoplay: { delay: 0, disableOnInteraction: !1 },
+      autoplay: { delay: 0 },
       loop: !0,
       centeredSlides: !0,
       centeredSlidesBounds: !0,
@@ -3225,20 +3225,15 @@ ve.data('caseSlider', () => ({
           setTimeout(() => {
             e.update();
           }, 120);
+        },
+        click: (e, i) => {
+          e.autoplay.stop();
+        },
+        transitionEnd: (e) => {
+          e.params.speed = 300;
         }
       }
     });
   },
-  slider: null,
-  pauseSlider() {
-    this.slider.autoplay.running &&
-      setTimeout(() => {
-        this.slider.autoplay.stop();
-      }, 120);
-  },
-  resumeSlider() {
-    setTimeout(() => {
-      this.slider.autoplay.start();
-    }, 120);
-  }
+  slider: null
 }));
