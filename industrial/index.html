@@ -193,12 +193,12 @@
         <div class="p-8 bg-white flex-auto">
           <nav>
             <ul class="font-bold text-lg divide-y [&>li]:py-3 [&>li:first-child]:pt-0">
-              <li class="group">
+              <li x-data="{open: false}" x-on:click="open = ! open">
                 <span class="inline-flex gap-2 items-center cursor-pointer">
                   <span>製品紹介</span>
-                  <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
+                  <img src="/assets/img/common/menu-arrow.svg" alt="menu-arrow" x-bind:class="{'rotate-180': open}">
                 </span>
-                <ul class="hidden font-normal space-y-3 pt-6 pb-3 group-hover:block">
+                <ul class="font-normal space-y-3 pt-6 pb-3" x-show="open">
                   <li>
                     <a class="hover:underline" href="/environment/">環境対応製品・サービス</a>
                   </li>
@@ -219,12 +219,12 @@
               <li>
                 <a href="/feature/">特徴</a>
               </li>
-              <li class="group">
+              <li x-data="{open: false}" x-on:click="open = ! open">
                 <span class="inline-flex gap-2 items-center cursor-pointer">
                   <span>採用をご検討の方</span>
-                  <img class="group-hover:rotate-180" src="/assets/img/common/menu-arrow.svg" alt="menu-arrow">
+                  <img src="/assets/img/common/menu-arrow.svg" alt="menu-arrow" x-bind:class="{'rotate-180': open}">
                 </span>
-                <ul class="hidden font-normal space-y-3 pt-6 pb-3 group-hover:block">
+                <ul class="font-normal space-y-3 pt-6 pb-3" x-show="open">
                   <li>
                     <a class="hover:underline" href="/sustainability/">ブランドオーナーさまへ</a>
                   </li>
