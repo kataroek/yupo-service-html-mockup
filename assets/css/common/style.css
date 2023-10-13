@@ -2444,6 +2444,9 @@ video {
   .max-md\:hidden {
     display: none;
   }
+  .max-md\:min-h-\[calc\(100svh-60px-120px\)\] {
+    min-height: calc(100svh - 180px);
+  }
   .max-md\:w-2\/5 {
     width: 40%;
   }
@@ -2573,6 +2576,9 @@ video {
   }
   .md\:min-h-\[480px\] {
     min-height: 480px;
+  }
+  .md\:min-h-\[calc\(100svh-200px\)\] {
+    min-height: calc(100svh - 200px);
   }
   .md\:\!w-\[180px\] {
     width: 180px !important;
